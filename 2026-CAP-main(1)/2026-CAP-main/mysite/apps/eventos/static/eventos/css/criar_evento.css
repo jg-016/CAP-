@@ -1,0 +1,198 @@
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.btn-open {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn-open:hover {
+    background-color: #1d4ed8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.event-modal-overlay {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.event-modal-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.event-modal {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.15);
+    width: 100%;
+    max-width: 420px;
+    padding: 24px;
+    margin: 16px;
+    position: relative;
+}
+
+.event-modal h2 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: #374151;
+}
+
+.modal-close svg {
+    width: 20px;
+    height: 20px;
+}
+.field {
+    margin-bottom: 16px;
+}
+
+.event-modal form {
+    margin-top: 0;
+}
+
+.field label {
+    display: block;
+    font-size: 11px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 13px;
+    color: #111;
+    outline: none;
+    font-family: inherit;
+}
+
+.field input:focus,
+.field textarea:focus {
+    border-color: #9ca3af;
+}
+
+.field textarea {
+    resize: none;
+}
+.time-row {
+    display: flex;
+    gap: 12px;
+}
+
+.time-row .field {
+    flex: 1;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.btn-cancel {
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 13px;
+    color: #4b5563;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-cancel:hover {
+    background: #f9fafb;
+}
+
+.btn-create {
+    flex: 1;
+    padding: 9px;
+    border: none;
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-create:hover {
+    background: #333;
+}
+
+.btn-delete {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.btn-delete:hover {
+    background-color: #b91c1c;
+}
+
+.btn-delete-icon {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 6px;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-delete-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-delete-icon:hover {
+    opacity: 0.9;
+}

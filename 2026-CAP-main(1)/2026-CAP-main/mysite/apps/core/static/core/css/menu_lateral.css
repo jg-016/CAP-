@@ -1,0 +1,62 @@
+.menu-lateral {
+    width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: var(--cor-de-fundo-2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.container-horizontal-menu {
+    padding: 0 10px;
+}
+.menu-lateral .logo {height: 30px}
+.item-menu {
+    width: 100%;
+    height: 33px;
+    padding: 0 5px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.item-menu > :not(.texto-menu) {
+    flex-shrink: 0;
+}
+.item-menu .botao-menu {
+    width: 24px;
+    height: 24px;
+}
+.item-menu .circulo {
+    border-width: 4.5px;
+    border-style: solid;
+    border-radius: 50%;
+
+    background-color: var(--cor-clara);
+    border-color: var(--cor-clara);
+}
+.item-menu .circulo:not(.preenchido) {
+    background-color: rgba(0, 0, 0, 0);
+}
+.item-menu > .texto-menu {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.item-menu:hover {
+    background-color: var(--cor-de-fundo-3);
+    cursor: pointer;
+}
+.item-menu:hover > .texto-menu {
+    text-decoration: underline;
+}
+
+.menu-lateral .calendarios-de-turma {
+    margin-left: 35px;
+}
+.menu-lateral .sair {
+    color: red;
+    fill: red;
+}

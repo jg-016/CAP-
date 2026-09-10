@@ -1,0 +1,139 @@
+{% load static %}
+
+<div class="menu-lateral container-vertical-body">
+
+    <!------------------------------ TOPO ------------------------------>
+    <div class="topo container-horizontal-menu">
+        <a href="{% url 'inicio' %}">
+            <img src="{% static 'core/logos/logo5.svg' %}" alt="" class="logo">
+        </a>
+    </div>
+
+    <hr>
+
+    <!------------------------------ AÇÕES GERAIS ------------------------------>
+    <nav class="acoes-gerais container-horizontal-menu">
+    <ul>
+        <li>
+            <a href="{% url 'inicio' %}">
+                <div class="item-menu">
+                    <div class="botao-menu icone icone-casa">
+                        <span class="material-symbols-outlined">home</span>
+                    </div>
+                    <p class="texto-menu">Calendário geral</p>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="{% url 'perfil' %}">
+                <div class="item-menu">
+                    <div class="botao-menu icone icone-perfil">
+                        <span class="material-symbols-outlined">account_circle</span>
+                    </div>
+                    <p class="texto-menu">Seu perfil</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    </nav>
+
+    <hr>
+
+    <!------------------------------ CALENDÁRIOS ------------------------------>
+    <nav>
+    <ul class="calendarios container-horizontal-menu">
+        <li>
+            <a href="{% url 'criar_calendario' %}">
+                <div class="item-menu">
+                    <div class="botao-menu icone icone-criar">
+                        <span class="material-symbols-outlined">add</span>
+                    </div>
+                    <p class="texto-menu">Criar calendário</p>
+                </div>
+            </a>
+        </li>
+
+        {% for calendario in calendarios_sem_turma %}
+            <li>    
+                <a href="{% url 'calendario' calendario.id %}">
+                    <div class="item-menu calendario paleta-{{ calendario.paleta }}" data-id-calendario="{{ calendario.id }}">
+                        <button class="botao-menu circulo {% if calendario.botao_menu_preenchido %}preenchido{% endif %}"></button>
+                        <p class="texto-menu">{{ calendario.nome }}</p>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    </nav>
+
+    <hr>
+
+    <!------------------------------ TURMAS ------------------------------>
+    <nav>
+    <ul class="turmas container-horizontal-menu">
+        <li>
+            <a href="{% url 'criar_turma' %}">
+                <div class="item-menu">
+                    <div class="botao-menu icone icone-criar">
+                        <span class="material-symbols-outlined">add</span>
+                    </div>
+                    <p class="texto-menu">Criar turma</p>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <div class="item-menu">
+                    <div class="botao-menu icone icone-entrar">
+                        <span class="material-symbols-outlined">arrow_outward</span>
+                    </div>
+                    <p class="texto-menu">Entrar em turma</p>
+                </div>
+            </a>
+        </li>
+
+        {% for turma in turmas %}
+            <li class="container-turma paleta-{{ turma.paleta }} {% if turma.listar_calendarios %}listar-calendarios{% endif %}">    
+                <a href="{% url 'turma' turma.id %}">
+                    <div class="item-menu turma" data-id-turma="{{ turma.id }}">
+                        <button class="botao-menu circulo {% if turma.botao_menu_preenchido %}preenchido{% endif %}"></button>
+                        <p class="texto-menu">{{ turma.nome }}</p>
+                    </div>
+                </a>
+            
+                <ul class="calendarios-de-turma">
+                    {% for calendario in turma.calendarios %}
+                        <li>    
+                            <a href="{% url 'calendario' calendario.id %}">
+                                <div class="item-menu calendario" data-id-calendario="{{ calendario.id }}">
+                                    <button class="botao-menu circulo {% if calendario.botao_menu_preenchido %}preenchido{% endif %}"></button>
+                                    <p class="texto-menu">{{ calendario.nome }}</p>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %} 
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+    </nav>
+
+    <hr>
+
+    <!------------------------------ SAIR ------------------------------>
+    <nav class="container-horizontal-menu">
+    <ul>
+        <li class="sair">
+            <a href="{% url 'logout' %}" class="item-menu">
+                <div class="botao-menu icone icone-sair">
+                    <span class="material-symbols-outlined">logout</span>        
+                </div>
+                <p class="texto-menu">Sair</p>
+            </a>
+        </li>
+    </ul>
+    </nav>
+
+</div>

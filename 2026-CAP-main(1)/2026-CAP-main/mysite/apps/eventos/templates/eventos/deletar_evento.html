@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Deletar evento{% endblock %}
+
+{% block content %}
+<section class="evento-confirmacao" aria-labelledby="confirmacao-titulo">
+    <h1 id="confirmacao-titulo">Deletar evento</h1>
+    <p>Tem certeza que deseja deletar o evento <strong>{{ evento.nome }}</strong>?</p>
+    <p>Essa ação não poderá ser desfeita.</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">Deletar evento</button>
+        <a href="{% url 'eventos:visualizar_evento' evento.id %}">Cancelar</a>
+    </form>
+</section>
+{% endblock %}

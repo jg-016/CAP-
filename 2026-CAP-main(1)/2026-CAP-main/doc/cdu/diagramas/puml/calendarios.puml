@@ -1,0 +1,22 @@
+@startuml calendarios
+
+actor Estudante
+left to right direction
+
+package "Calendários" {
+
+    usecase "Deletar calendário" as UC1
+    usecase "Atualizar calendário" as UC2
+    usecase "Visualizar calendário" as UC3
+   ' usecase "Consultar calendários" as UC4 (REMOVIDO) '
+    usecase "Criar calendário" as UC5
+
+}
+
+Estudante --> UC1
+Estudante --> UC2
+Estudante --> UC3
+' Estudante --> UC4 (REMOVIDO) '
+Estudante --> UC5
+
+@enduml

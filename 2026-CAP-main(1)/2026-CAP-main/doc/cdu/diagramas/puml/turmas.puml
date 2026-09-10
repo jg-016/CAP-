@@ -1,0 +1,27 @@
+@startuml turmas
+
+left to right direction
+
+actor Estudante
+
+package "Turmas" {
+
+    ' usecase "Consultar turmas" as UC1 (REMOVIDO) '
+    usecase "Remover calendário de turma" as UC2
+    usecase "Adicionar calendário à turma" as UC3
+    usecase "Deletar turma" as UC4
+    usecase "Atualizar turma" as UC5
+    usecase "Visualizar turma" as UC6
+    usecase "Criar turma" as UC7
+
+}
+
+' Estudante --> UC1 (REMOVIDO) '
+Estudante --> UC2
+Estudante --> UC3
+Estudante --> UC4
+Estudante --> UC5
+Estudante --> UC6
+Estudante --> UC7
+
+@enduml

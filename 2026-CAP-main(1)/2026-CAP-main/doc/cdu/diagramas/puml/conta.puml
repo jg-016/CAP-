@@ -1,0 +1,19 @@
+@startuml conta
+
+actor Estudante
+left to right direction
+package "Conta" {
+
+    usecase "Deletar conta" as UC1
+    usecase "Atualizar conta" as UC2
+    usecase "Visualizar conta" as UC3
+    usecase "Criar conta" as UC4
+
+}
+
+Estudante --> UC1
+Estudante --> UC2
+Estudante --> UC3
+Estudante --> UC4
+
+@enduml

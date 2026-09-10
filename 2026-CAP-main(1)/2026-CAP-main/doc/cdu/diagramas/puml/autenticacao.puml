@@ -1,0 +1,15 @@
+@startuml autenticacao
+
+left to right direction
+
+actor Estudante
+
+package "Autenticação" {
+    usecase "Entrar" as UC1
+    usecase "Sair" as UC2
+}
+
+Estudante --> UC2
+Estudante --> UC1
+
+@enduml

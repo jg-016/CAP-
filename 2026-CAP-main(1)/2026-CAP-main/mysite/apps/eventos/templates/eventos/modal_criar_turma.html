@@ -1,0 +1,51 @@
+{% load static %}
+
+<div id="criarTurmaModal" class="modal" style="display: none;" aria-hidden="true">
+    <div class="modal-content">
+        <button type="button" class="close" data-close-modal="criarTurmaModal" aria-label="Fechar">&times;</button>
+        <section class="card_calendario">
+            <h1>Criar Turma</h1>
+            <p class="subtitulo">Preencha as informações para criar uma turma.</p>
+
+            <form id="form_criar_turma" method="post" action="">
+                <div class="campo">
+                    <label for="nome_turma">Nome da turma</label>
+                    <input
+                        type="text"
+                        id="nome_turma"
+                        name="nome_turma"
+                        placeholder="Ex.: Informática 2026"
+                        maxlength="100"
+                        required
+                    >
+                    <small id="erro_nome_turma" class="mensagem_erro"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao_turma">Descrição</label>
+                    <textarea
+                        id="descricao_turma"
+                        name="descricao_turma"
+                        rows="5"
+                        placeholder="Coloque a descrição da turma"
+                        maxlength="500"
+                        required
+                    ></textarea>
+                    <small id="erro_descricao_turma" class="mensagem_erro"></small>
+                </div>
+
+                <div id="mensagem_sucesso_turma" class="mensagem_sucesso"></div>
+
+                <div class="botoes">
+                    <button type="button" class="btn_cancelar" onclick="cancelar_criacao_turma()">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn_criar">
+                        Criar turma
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

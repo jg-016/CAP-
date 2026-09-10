@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'usuarios/css/login.css' %}">
+    <title>CAP | Login</title>
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <section class="painel-log">
+            <article class="card">
+                <header class="cabecalho">
+                    <h1><img src="{% static 'core/logos/logo_principal.svg' %}" alt="CAP"></h1>
+                    <h1>Bem-vindo!</h1>
+                    <p>Entre na sua conta para continuar.</p>
+                </header>
+
+                <form method="post">
+                    {% csrf_token %}
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" name="email" value="{{ request.POST.email|default:'' }}" placeholder="seu@email.com" autocomplete="email" required>
+                    
+                    <label for="senha">SENHA</label>
+                    <section class="campo-senha">
+                        <input type="password" id="senha" name="password" placeholder="*****" autocomplete="current-password" required>
+                        <!-- <button type="button" id="btn-olho">Mostrar</button> -->
+                    </section>
+                     
+                    {% if erro %}
+                        <p class="erro" role="alert">{{ erro }}</p>
+                    {% endif %}
+                    
+                    <button type="submit" id="btn-entrar">Entrar</button>
+                </form>
+
+                <footer class="rodape-form">
+                    <p>Não tem uma conta? <a href="{% url 'cadastro' %}">Cadastre-se</a></p>
+                </footer>
+            </article>
+        </section>
+
+    </main>
+    <!-- <script src="{% static 'usuarios/js/login.js' %}"></script> -->
+</body>
+</html>

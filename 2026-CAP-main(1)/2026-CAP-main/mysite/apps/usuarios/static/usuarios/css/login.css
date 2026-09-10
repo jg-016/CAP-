@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('../imagens/fundo-login-cap.png');
+    background-size: cover;
+    min-height: 100vh;
+    font-family: Inter, sans-serif;
+}
+
+.painel-log {
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #ffffff;
+}
+/* preciso de um background (desktop) para a tela de login e cadastro de um site. O site é um calendário (foco no calendário) gerenciador de atividades acadêmicas. As cores para interface são essas. */
+.card {
+    width: 100%;
+    max-width: 420px;
+}
+
+.cabecalho {
+    margin-bottom: 30px;
+}
+
+
+.cabecalho h1 {
+    margin: 0 0 10px;
+    font-size: 32px;
+}
+
+.cabecalho p {
+    margin: 0;
+    color: #666666;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #333333;
+}
+.campo-senha {
+    position: relative;
+}
+.campo-senha input {
+    padding-right: 80px;
+}
+.erro {
+    margin: 0 0 15px;
+    color: #d32f2f;
+}
+
+#btn-entrar {
+    width: 100%;
+    padding: 13px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #222222;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn-entrar:hover {
+    background-color: #444444;
+}
+
+.rodape-form {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.rodape-form p {
+    margin: 0;
+}
+
+.rodape-form a {
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.rodape-form a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .pagina {
+        display: block;
+    }
+
+    .painel-esquerdo {
+        display: none;
+    }
+
+    .painel-direito {
+        width: 100%;
+        min-height: 100vh;
+        padding: 2rem;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 120px;
+        margin: 0 auto 30px;
+    }
+
+    .cabecalho {
+        text-align: center;
+    }
+}

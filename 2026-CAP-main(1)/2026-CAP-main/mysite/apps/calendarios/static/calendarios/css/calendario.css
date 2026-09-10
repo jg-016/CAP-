@@ -1,0 +1,90 @@
+.topo--compact {
+    margin-top: 28px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.calendar-members {
+    margin-top: 24px;
+}
+
+main .topo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .link-calendario:hover,
+main .link-turma:hover {
+    text-decoration: underline;
+}
+
+main .topo .circulo-paleta {
+    margin-left: auto;
+    background-color: var(--cor-clara);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main h1 {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main h1 .calendario:hover {
+    text-decoration: underline;
+}
+
+main h1 .turma:hover {
+    text-decoration: underline;
+}
+
+.descricao {
+    margin-top: 10px;
+}
+
+main h3 {
+    margin-top: 30px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+main .lista-membros {
+    border-top: 1px solid var(--cor-de-fonte-2);
+}
+
+main .membro {
+    border-bottom: 1px solid var(--cor-de-fonte-2);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 45px;
+}
+
+main .membro .icone-email {
+    margin-left: auto;
+}
+
+main .membro .membro-eh-admin {
+    margin-left: auto;
+}
+
+main .icone-atualizar:not(.admin) span,
+main .icone-deletar:not(.admin) span {
+    fill: var(--cor-de-fonte-2);
+}
+
+main .icone-atualizar span {
+    font-size: 30px;
+}
+
+main .icone-deletar span {
+    font-size: 30px;
+}
+
+main .membro .icone-email span {
+    font-size: 20px;
+}

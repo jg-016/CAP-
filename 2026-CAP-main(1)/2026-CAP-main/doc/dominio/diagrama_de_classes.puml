@@ -1,0 +1,48 @@
+@startuml diagrama de classes
+
+class Usuario {
+  - email: str
+  - senha: str
+  - nome_completo: str
+}
+
+class Turma {
+  - nome: str
+  - descricao: str
+  - codigo: str
+}
+
+class Calendario {
+  - nome: str
+  - descricao: str
+}
+
+class Evento {
+  - titulo: str
+  - conteudo: str
+  - data: date
+  - inicio: time
+  - fim: time
+}
+
+class MembroDeTurma {
+  - eh_admin: bool
+  - numero_paleta: int
+}
+
+class MembroDeCalendario {
+  - eh_admin: bool
+  - numero_paleta: int
+}
+
+Calendario "0..*" -- "0..1" Turma
+
+MembroDeTurma "0..*" -- "1" Usuario
+MembroDeTurma "1..*" -- "1" Turma
+
+MembroDeCalendario "0..*" -- "1" Usuario
+MembroDeCalendario "1..*" -- "1" Calendario
+
+Evento "0..*" -- "1" Calendario
+
+@enduml

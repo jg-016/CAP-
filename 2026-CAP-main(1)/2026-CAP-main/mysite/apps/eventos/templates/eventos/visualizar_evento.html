@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block title %}{{ evento.nome }}{% endblock %}
+
+{% block content %}
+<section class="evento-detalhes" aria-labelledby="evento-titulo">
+    <a href="{% url 'calendario' evento.calendario.id %}">Voltar ao calendário</a>
+    <h1 id="evento-titulo">{{ evento.nome }}</h1>
+
+    <dl>
+        <dt>Descrição</dt>
+        <dd>{{ evento.conteudo|default:"Sem descrição." }}</dd>
+
+        <dt>Data</dt>
+        <dd>{{ evento.inicio|date:"d/m/Y" }}</dd>
+
+        <dt>Horário</dt>
+        <dd>{{ evento.inicio|date:"H:i" }} - {{ evento.fim|date:"H:i" }}</dd>
+
+        <dt>Calendário</dt>
+        <dd>{{ evento.calendario.nome }}</dd>
+    </dl>
+
+    {% if usuario_eh_admin %}
+        <a href="{% url 'eventos:deletar_evento' evento.id %}">Deletar evento</a>
+    {% endif %}
+</section>
+{% endblock %}

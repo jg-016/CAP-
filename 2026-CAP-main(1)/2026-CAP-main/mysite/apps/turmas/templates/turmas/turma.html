@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}{{ turma.nome }}{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'turmas/css/turma.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>{{ turma.nome }}</h1>
+
+    <a href="{% url 'atualizar_turma' turma.id %}" class="icone-atualizar admin">
+        <span class="material-symbols-outlined">edit</span>
+    </a>
+
+    <a href="{% url 'deletar_turma' turma.id %}" class="icone-deletar admin">
+        <span class="material-symbols-outlined">delete</span>
+    </a>
+{% endblock %}

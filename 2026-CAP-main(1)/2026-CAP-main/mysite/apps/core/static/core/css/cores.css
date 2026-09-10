@@ -1,0 +1,44 @@
+:root {
+    --cor-de-fundo-1: #FFFFFF;
+    --cor-de-fundo-2: #F6F6F6;
+    --cor-de-fundo-3: #E6E6E6;
+    --cor-de-fundo-4: #B6B6B6;
+
+    --cor-de-fonte-1: #000000;
+    --cor-de-fonte-2: #717070;
+}
+.paleta-1 {
+    --cor-clara: #FF6366;
+    --cor-media: #D61212;
+    --cor-escura: #A60000;
+}
+.paleta-2 {
+    --cor-clara: #FFBC82;
+    --cor-media: #F28C33;
+    --cor-escura: #BD6E28;
+}
+.paleta-3 {
+    --cor-clara: #77EF72;
+    --cor-media: #10B70A;
+    --cor-escura: #1E681C;
+}
+.paleta-4 {
+    --cor-clara: #6B97FF;
+    --cor-media: #1D61FF;
+    --cor-escura: #0033A9;
+}
+.paleta-5 {
+    --cor-clara: #7eecff;
+    --cor-media: #5DE7FF;
+    --cor-escura: #25A6BC;
+}
+.paleta-6 {
+    --cor-clara: #B382F7;
+    --cor-media: #7D3ADA; 
+    --cor-escura: #4500A6;
+}
+.paleta-7 {
+    --cor-clara: #EC8DFF;
+    --cor-media: #D820FD;
+    --cor-escura: #9B1AB5;
+}

@@ -1,0 +1,58 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar evento</title>
+        <link rel="stylesheet" href="{% static 'eventos/css/vizualizar_evento.css' %}">
+</head>
+<body>
+
+<div id="modalEvento" class="modal">
+    <div class="modal-content">
+
+        <h3 id="tituloEvento">Titulo</h3>
+
+        <div class="info">
+            <strong>Descrição:</strong>
+            <span id="descricaoEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Data:</strong>
+            <span id="dataEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Horário:</strong>
+            <span id="horarioEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Local:</strong>
+            <span id="localEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Organizador:</strong>
+            <span id="organizadorEvento"></span>
+        </div>
+
+
+        <div class="info">
+            <strong>Status:</strong>
+            <span id="statusEvento" class="status"></span>
+        </div>
+
+        <button onclick="fecharModal()"></button>
+    </div>
+</div>
+
+
+<script src="{% static 'eventos/js/vizualizar_evento.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+.pagina {
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.card_calendario {
+    width: 100%;
+    max-width: 500px;
+    padding: 28px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card_calendario h1 {
+    margin: 0 0 8px;
+    color: #222222;
+    font-size: 1.5rem;
+}
+
+.subtitulo {
+    margin: 0 0 24px;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    margin-bottom: 7px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #2563eb;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.mensagem_erro {
+    min-height: 18px;
+    margin-top: 5px;
+    color: #c62828;
+    font-size: 0.8rem;
+}
+
+.mensagem_sucesso {
+    display: none;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #dff5e5;
+    color: #1b6b35;
+    font-size: 0.9rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.botoes button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn_cancelar {
+    background: #e5e7eb;
+    color: #333333;
+}
+
+.btn_criar {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn_criar:hover,
+.btn_cancelar:hover {
+    opacity: 0.9;
+}
+
+.campo_invalido {
+    border-color: #c62828 !important;
+}

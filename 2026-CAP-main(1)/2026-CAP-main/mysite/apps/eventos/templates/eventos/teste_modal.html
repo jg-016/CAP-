@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Modais</title>
+    <link rel="stylesheet" href="{% static 'eventos/css/criar_evento.css' %}">
+</head>
+<body>
+    <div style="padding: 30px; font-family: Arial, sans-serif;">
+        <h1>Teste de Modais de Evento</h1>
+        <p>Esta é uma página simples para validar os modais de criação e edição.</p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+            <button id="openCreateTest" class="btn-open">Abrir modal de criação</button>
+            <button id="openEditTest" class="btn-open">Abrir modal de edição</button>
+        </div>
+    </div>
+
+    {% include "eventos/modal_criar_evento.html" %}
+    {% include "eventos/modal_editar_evento.html" %}
+
+    <script src="{% static 'eventos/js/evento.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openCreateTest = document.getElementById('openCreateTest');
+            const openEditTest = document.getElementById('openEditTest');
+
+            if (openCreateTest) {
+                openCreateTest.addEventListener('click', function() {
+                    if (typeof openCreateModal === 'function') {
+                        openCreateModal();
+                    }
+                });
+            }
+
+            if (openEditTest) {
+                openEditTest.addEventListener('click', function() {
+                    if (typeof openEditModal === 'function') {
+                        openEditModal({
+                            id: '123',
+                            title: 'Evento de teste',
+                            date: '2026-06-24',
+                            start_time: '10:00',
+                            end_time: '11:00',
+                            description: 'Descrição de teste para edição de evento.',
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

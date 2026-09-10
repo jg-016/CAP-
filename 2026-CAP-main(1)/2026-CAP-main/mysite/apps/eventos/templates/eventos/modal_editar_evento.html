@@ -1,0 +1,47 @@
+{% load static %}
+
+<div id="editEventModal" class="modal" style="display: none;">
+    <div class="modal-content draggable-modal">
+        <div class="modal-header" id="editModalHeader">
+            <h2>Editar Evento</h2>
+            <button type="button" class="modal-close" aria-label="Fechar modal">×</button>
+        </div>
+        <form method="post" action="">
+            <div class="modal-body">
+                <input type="hidden" id="edit-event-id" name="event_id">
+                <label for="edit-title">Título</label>
+                <input type="text" id="edit-title" name="title" placeholder="Digite o título do evento">
+                <label for="calendario">Calendário</label>
+                <select id="calendario" name="calendario">
+                    {% for calendario in calendarios %}
+                        <option value="{{ calendario.id }}" {% if calendario.id == evento.calendario.id %}selected{% endif %}>{{ calendario.nome }}</option>
+                    {% endfor %}
+                </select>
+                <label for="edit-date">Data</label>
+                <input type="date" id="edit-date" name="date">
+
+                <div class="horarios">
+                    <div>
+                        <label for="edit-start-time">Início</label>
+                        <input type="time" id="edit-start-time" name="start_time">
+                    </div>
+                    <div>
+                        <label for="edit-end-time">Fim</label>
+                        <input type="time" id="edit-end-time" name="end_time">
+                    </div>
+                </div>
+
+                <label for="edit-description">Descrição</label>
+                <textarea id="edit-description" name="description" rows="4" placeholder="Descreva o evento"></textarea>
+            </div>
+
+            <div class="botoes">
+                <button type="button" id="edit-delete" class="btn-delete-icon" title="Excluir evento" aria-label="Excluir evento">
+                    <img src="{% static 'eventos/img/delete-icon.svg' %}" alt="Excluir evento">
+                </button>
+                <button type="button" id="edit-cancel" class="btn-cancel">Cancelar</button>
+                <button type="submit" id="edit-save" class="btn-save">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>

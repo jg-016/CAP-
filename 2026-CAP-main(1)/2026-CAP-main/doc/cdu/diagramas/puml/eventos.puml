@@ -1,0 +1,20 @@
+@startuml eventos
+
+actor Estudante
+left to right direction
+
+package "Eventos" {
+    usecase "Deletar evento" as UC1
+    usecase "Atualizar evento" as UC2
+    usecase "Visualizar evento" as UC3
+    usecase "Visualizar quadro geral" as UC4
+    usecase "Criar evento" as UC5
+}
+
+Estudante --> UC1
+Estudante --> UC2
+Estudante --> UC3
+Estudante --> UC4
+Estudante --> UC5
+
+@enduml

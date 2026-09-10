@@ -1,0 +1,25 @@
+@startuml participacao_turmas
+
+left to right direction
+
+actor Estudante
+
+package "Participação em Turmas" {
+
+    usecase "Atualizar suas preferências de turma" as UC1
+    usecase "Sair de turma" as UC2
+    usecase "Entrar em turma" as UC3
+    usecase "Alterar permissão de participante de turma" as UC4
+    usecase "Remover participante de turma" as UC5
+    usecase "Consultar participantes de turma" as UC6
+
+}
+
+Estudante --> UC1
+Estudante --> UC2
+Estudante --> UC3
+Estudante --> UC4
+Estudante --> UC5
+Estudante --> UC6
+
+@enduml

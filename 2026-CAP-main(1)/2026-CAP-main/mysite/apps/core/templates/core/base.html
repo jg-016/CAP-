@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menu_lateral.css' %}">
+    <link rel="stylesheet" href="{% static 'eventos/css/criar_evento.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'eventos/css/criar_calendario.css' %}"> -->
+    {% block extra_css %}{% endblock %}
+
+    <title>CAP - {% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    
+    {% include "core/menu_lateral.html" %}
+    {% include "eventos/modal_criar_calendario.html" %}
+    {% include "eventos/modal_editar_evento.html" %}
+
+    <main class="container-vertical-body">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script src="{% static 'core/js/base.js' %}"></script>
+    <script src="{% static 'eventos/js/criar_calendario.js' %}" defer></script>
+    <script src="{% static 'eventos/js/evento.js' %}" defer></script>
+    <script src="{% static 'eventos/js/gerenciador_modal_evento.js' %}" defer></script>
+    <script src="{% static 'core/js/menu_lateral.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

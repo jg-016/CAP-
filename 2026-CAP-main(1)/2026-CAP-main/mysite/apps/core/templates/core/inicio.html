@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Calendário geral{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'core/css/inicio.css' %}">
+    <link rel="stylesheet" href="{% static 'eventos/css/modal_criar_evento.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/calendario_geral.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static 'core/js/inicio.js' %}"></script>
+    <script src="{% static 'eventos/js/evento.js' %}"></script>
+    <script src="{% static 'core/js/calendario_geral.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    {% include 'core/calendario_geral.html' %}
+{% endblock %}

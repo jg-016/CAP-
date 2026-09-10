@@ -1,0 +1,4073 @@
+===============================
+ESTRUTURA DO PROJETO
+===============================
+.
+./doc
+./doc/arquivo_astah
+./doc/bd
+./doc/bd/imgs
+./doc/cdu
+./doc/cdu/001
+./doc/cdu/002
+./doc/cdu/003
+./doc/cdu/004
+./doc/cdu/005
+./doc/cdu/006
+./doc/cdu/007
+./doc/cdu/008
+./doc/cdu/009
+./doc/cdu/010
+./doc/cdu/011
+./doc/cdu/012
+./doc/cdu/013
+./doc/cdu/014
+./doc/cdu/015
+./doc/cdu/016
+./doc/cdu/017
+./doc/cdu/018
+./doc/cdu/019
+./doc/cdu/020
+./doc/cdu/021
+./doc/cdu/022
+./doc/cdu/023
+./doc/cdu/024
+./doc/cdu/025
+./doc/cdu/026
+./doc/cdu/027
+./doc/cdu/028
+./doc/cdu/029
+./doc/cdu/diagramas
+./doc/cdu/diagramas/imagens
+./doc/cdu/diagramas/puml
+./doc/design
+./doc/design/imgs
+./doc/design/logo-projeto
+./doc/design/paleta-de-cores
+./doc/dominio
+./doc/guia-ds
+./doc/visao
+./mysite
+./mysite/apps
+./mysite/apps/calendarios
+./mysite/apps/calendarios/migrations
+./mysite/apps/calendarios/models
+./mysite/apps/calendarios/templates
+./mysite/apps/core
+./mysite/apps/core/migrations
+./mysite/apps/core/static
+./mysite/apps/core/static/core
+./mysite/apps/core/static/core/css
+./mysite/apps/core/static/core/icones
+./mysite/apps/core/templates
+./mysite/apps/core/templates/core
+./mysite/apps/eventos
+./mysite/apps/eventos/migrations
+./mysite/apps/eventos/models
+./mysite/apps/eventos/static
+./mysite/apps/eventos/static/eventos
+./mysite/apps/eventos/static/eventos/css
+./mysite/apps/eventos/static/eventos/img
+./mysite/apps/eventos/static/eventos/js
+./mysite/apps/eventos/templates
+./mysite/apps/eventos/templates/eventos
+./mysite/apps/turmas
+./mysite/apps/turmas/migrations
+./mysite/apps/turmas/models
+./mysite/apps/turmas/templates
+./mysite/apps/usuarios
+./mysite/apps/usuarios/migrations
+./mysite/apps/usuarios/models
+./mysite/apps/usuarios/templates
+./mysite/config
+./mysite/config/settings
+./mysite2
+./mysite2/apps
+./mysite2/apps/eventos
+./mysite2/apps/eventos/static
+./mysite2/apps/eventos/static/eventos
+./mysite2/apps/eventos/static/eventos/css
+./mysite2/apps/eventos/templates
+./mysite2/apps/eventos/templates/eventos
+
+
+===============================
+CÓDIGO DOS ARQUIVOS
+===============================
+
+
+===== ARQUIVO: ./README.md =====
+# CAP - Calendário Acadêmico de Prazos
+
+<img src="doc/design/logo-projeto/logo-principal-fundo.png" width="200" height="200" />
+
+>Inserir pequena descrição do projeto
+
+O Calendário Acadêmico de Prazos (CAP) é uma aplicação web voltada para estudantes, com a missão de:
+- Centralizar as obrigações acadêmicas de uma turma em uma única interface de calendário
+- Promover o protagonismo estudantil na organização de sua vida escolar, sem a necessidade de professores e instituições formais
+- Criar espaços colaborativos para estudantes de uma mesma turma
+- Conciliar o cumprimento dos deveres escolares e a vida pessoal do estudante
+Para isso, permitimos que os estudantes gerenciem seus eventos e tarefas, tanto pessoais quanto vinculados a turmas!
+
+# Equipe e Formas de Contato
+
+1. André Isaque da Silva Lima - isaque.s@escolar.ifrn.edu.br - E-mail
+2. Carlos Danilo Ramos dos Santos - carlos.danilo@escolar.ifrn.edu.br - E-mail
+3. Giordanni Gomes Maciel - g.giordanni@escolar.ifrn.edu.br - E-mail
+4. João Gabriel Figueiredo Feitosa - feitosa.joao@escolar.ifrn.edu.br - E-mail
+5. Bianca Ferreira Dos Santos Teixeira - ???
+
+
+> Descrever as formas de contato da equipe - WhatsApp, Discord, etc.
+
+# Reuniões Semanais da Equipe
+
+1. Reunião com o orientaor OU reservada para apresentações - **"Horário Flexível"**.
+
+> Descrever dias, horários e local das demais reuniões da equipe
+
+**REGISTRO**
+> 25/03/2026, 1:00 às 2:00, Biblioteca
+
+> [!TIP]
+> Obs.: é fortemente recomendado que todas as reuniões da equipe sejam registradas na forma de tarefas (*issues*), contendo essencialmente informações como: presentes, temas discutidos e os encaminhamentos. Essas tarefas devem ser marcadas com o label correspondente.
+
+# Documentação
+
+Clique em cada um dos links abaixo para acessar o artefato específico.
+
+1. [Documento de Visão](doc/visao/doc-visao.md)
+1. [Protótipos de Interface com o Usuário](doc/design/prototipos.md)
+1. [Modelo de Casos de Uso](doc/cdu/cdu.md)
+1. [Modelo de Domínio](doc/dominio/dominio.md)
+1. [Modelo de Dados](doc/bd/bd.md)
+
+# Manual da Desenvolvedor
+
+[Orientações para os desenvolvedores do projeto](doc/guia-ds/guia.md)
+
+
+===== ARQUIVO: ./doc/bd/bd.md =====
+# Modelo de Dados
+
+## Histórico de Revisões
+
+| Data | Versão | Descrição | Autores |
+| :--: | :----: | :-------: | :-----: |
+| - | - | Versão inicial |  - |
+| - | - | - |  - |
+
+## 1. Diagrama ER
+
+![Substitua pela imagem do Diagrama ER...](imgs/placeholder.png)
+> Substitua pela imagem do Diagrama ER...
+
+[LINK para o arquivo com o modelo](#)
+
+## 2. Modelo Relacional
+
+![Substitua pela imagem do Modelo Relacional...](imgs/placeholder.png)
+> Substitua pela imagem do Modelo Relacional...
+
+[LINK para o arquivo com o modelo](#)
+
+## 3. Dicionário de Dados
+
+--- 
+**Tabela** : [nome da tabela 1]
+
+*Descrição* : ...
+
+*Observações* : ...
+
+| Colunas | Descrição | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check | 
+| ------- | --------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | ----- |
+| [nome da coluna] | [descrição da coluna] | [tipo_de_dado] | [tamanho - se necessário | &#9745;  | &#9744; | &#9744; | &#9744; | &#9744; | [default - se necessário] | [outras restrições - se necessário] | 
+
+--- 
+**Tabela** : [nome da tabela 2]
+
+*Descrição* : ...
+
+*Observações* : ...
+
+| Colunas | Descrição | Tipo de Dado | Tamanho | Null | PK | FK | Unique | Identity | Default | Check | 
+| ------- | --------- | ------------ | ------- | ---- | -- | -- | ------ | -------- | ------- | ----- |
+| [nome da coluna] | [descrição da coluna] | [tipo_de_dado] | [tamanho - se necessário | &#9745;  | &#9744; | &#9744; | &#9744; | &#9744; | [default - se necessário] | [outras restrições - se necessário] | 
+
+
+===== ARQUIVO: ./doc/cdu/001/cdu_001.md =====
+# CDU-001 Entrar
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante autentica-se no sistema.
+- **Pré-condição**: O estudante não está autenticado no sistema.
+- **Pós-Condição**: O estudante está autenticado no sistema.
+
+## Fluxo Principal
+
+|                           Ações do ator                           |                   Ações do sistema                   |
+| :------------------------------------------------------------------: | :----------------------------------------------------: |
+|           1 - Estudante acessa o formulário de cadastro.           | 2 - Sistema exibe o formulário de criação de conta. |
+| 3 - Estudante preenche nome, e-mail, senha e confirmação de senha. |                          ....                          |
+|            4 - Estudante envia o formulário de cadastro.            |        5 - Sistema valida os dados informados.        |
+|                                 ....                                 | 6 - Sistema cria a conta e exibe mensagem de sucesso. |
+
+## Fluxo Alternativo I - Dados inválidos
+
+|                           Ações do ator                           |                          Ações do sistema                          |
+| :------------------------------------------------------------------: | :------------------------------------------------------------------: |
+| 1.1 - Envia formulário com dados inválidos ou senha incompatível. | 1.2 - Sistema exibe mensagem de erro indicando os campos inválidos. |
+|           1.3 - Corrige os dados e reenvia o formulário.           |    1.4 - Sistema retoma a validação e segue o fluxo principal.    |
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/002/cdu_002.md =====
+# CDU-002 Sair
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante encerra sua sessão no sistema.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: O estudante não está autenticado no sistema.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/003/cdu_003.md =====
+# CDU-003 Criar conta
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante cria uma conta no sistema.
+- **Pré-condição**: Nenhuma.
+- **Pós-Condição**: A conta do estudante está registrada no sistema.
+
+## Fluxo Principal
+
+|                           Ações do ator                           |                   Ações do sistema                   |
+| :------------------------------------------------------------------: | :----------------------------------------------------: |
+|           1 - Estudante acessa o formulário de cadastro.           | 2 - Sistema exibe o formulário de criação de conta. |
+| 3 - Estudante preenche nome, e-mail, senha e confirmação de senha. |                          ....                          |
+|            4 - Estudante envia o formulário de cadastro.            |        5 - Sistema valida os dados informados.        |
+|                                 ....                                 | 6 - Sistema cria a conta e exibe mensagem de sucesso. |
+
+## Fluxo Alternativo I - Dados inválidos
+
+|                           Ações do ator                           |                          Ações do sistema                          |
+| :------------------------------------------------------------------: | :------------------------------------------------------------------: |
+| 1.1 - Envia formulário com dados inválidos ou senha incompatível. | 1.2 - Sistema exibe mensagem de erro indicando os campos inválidos. |
+|           1.3 - Corrige os dados e reenvia o formulário.           |    1.4 - Sistema retoma a validação e segue o fluxo principal.    |
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/004/cdu_004.md =====
+# CDU-004 Visualizar conta
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante visualiza as informações de sua conta.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/005/cdu_005.md =====
+# CDU-005 Atualizar conta
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante atualiza as informações de sua conta.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: Os dados da conta do estudante estão atualizados.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/006/cdu_006.md =====
+# CDU-006 Deletar conta
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante remove sua conta do sistema.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: A conta do estudante não está mais registrada no sistema.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/007/cdu_007.md =====
+# CDU-007 Criar calendário
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante cria um calendário.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: O calendário está registrado no sistema.
+
+## Fluxo Principal
+
+|                     Ações do ator                     |                         Ações do sistema                         |
+| :------------------------------------------------------: | :----------------------------------------------------------------: |
+|   1 - Estudante acessa a opção de criar calendário.   |    2 - Sistema exibe o formulário de criação de calendário.    |
+| 3 - Estudante informa nome e descrição do calendário. |                                                                    |
+|            4 - Estudante envia o formulário.            |              5 - Sistema valida os dados informados.              |
+|                           ...                           | 6 - Sistema cria o calendário e confirma o sucesso da operação. |
+
+## Fluxo Alternativo I - Dados inválidos
+
+|                        Ações do ator                        |                          Ações do sistema                          |
+| :------------------------------------------------------------: | :------------------------------------------------------------------: |
+| 1.1 - Estudante envia formulário com informações inválida. | 1.2 - Sistema exibe mensagem de erro indicando os campos inválidos. |
+|   1.3 - Estudante corrige os dados e reenvia o formulário.   |           1.4 - Sistema valida e segue o fluxo principal.           |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+>
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/008/cdu_008.md =====
+# CDU-008 Consultar calendários - CASO REMOVIDO
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante consulta seus calendários.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+|                         Ações do ator                         |                    Ações do sistema                    |
+| :--------------------------------------------------------------: | :------------------------------------------------------: |
+|   1 - Estudante seleciona a opção "Consultar calendários".   | 2 - Sistema exibe a lista de calendários disponíveis. |
+|             3 - Estudante visualiza os calendários.             | 4 - Sistema mantém a lista disponível para seleção. |
+| 5 - Estudante escolhe um calendário para visualizar os eventos. | 6 - Sistema exibe os eventos do calendário selecionado. |
+
+## Fluxo Alternativo I - Nenhum calendário disponível
+
+|                               Ações do ator                               |                        Ações do sistema                        |
+| :-------------------------------------------------------------------------: | :---------------------------------------------------------------: |
+| 1.1 - Estudante acessa a consulta quando não há calendários cadastrados. | 1.2 - Sistema informa que não existem calendários disponíveis. |
+
+## Fluxo Alternativo II - Calendário indisponível
+
+|                             Ações do ator                             |                                 Ações do sistema                                 |
+| :----------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| 2.1 - Estudante tenta selecionar um calendário que está indisponível. | 2.2 - Sistema informa que o calendário não está disponível e retorna à lista. |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+>
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/009/cdu_009.md =====
+# CDU-009 Visualizar calendário
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante visualiza as informações de um calendário.
+- **Pré-condição**: O estudante está autenticado no sistema e é membro do calendário.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/010/cdu_010.md =====
+# CDU-010 Atualizar calendário
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante atualiza as informações de um calendário.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador do calendário.
+- **Pós-Condição**: Os dados do calendário estão atualizados.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/011/cdu_011.md =====
+# CDU-011 Deletar calendário
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante remove um calendário do sistema.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador do calendário.
+- **Pós-Condição**: O calendário não está mais registrado no sistema.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/012/cdu_012.md =====
+# CDU-012 Criar evento
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante cria um evento em um calendário.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador do calendário associado ao evento.
+- **Pós-Condição**: O evento está registrado no sistema.
+
+## Fluxo Principal
+
+|                            Ações do ator                            |                   Ações do sistema                   |
+| :--------------------------------------------------------------------: | :-----------------------------------------------------: |
+|             1 - Estudante acessa a opção "Criar evento".             | 2 - Sistema exibe o formulário de criação de evento. |
+| 3 - Estudante preenche título, calendário, data, e descrição. Estudante também informa horário inicial e horário final ou se é um evento que ocupa o dia todo. | |
+|                   4 - Estudante envia o formulário.                   |         5 - Sistema valida os dados informados.         |
+|                                                                        | 6 - Sistema salva o evento e exibe mensagem de sucesso. |
+
+## Fluxo Alternativo I - Dados inválidos
+
+|                              Ações do ator                              |                                  Ações do sistema                                  |
+| :-----------------------------------------------------------------------: | :----------------------------------------------------------------------------------: |
+| 1.1 - Estudante envia o formulário com campos inválidos ou incompletos. | 1.2 - Sistema exibe mensagem de erro indicando quais campos precisam ser corrigidos. |
+
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+>
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> <img width="1771" height="603" alt="criar_evento" src="https://github.com/user-attachments/assets/65a36a7d-3d61-4030-b2f1-ffbf1f0bffd3" />
+
+
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/013/cdu_013.md =====
+# CDU-013 Visualizar quadro geral
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante consulta os eventos presentes em seus calendários.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+Este caso de uso permite que o Estudante visualize os eventos presentes em seus calendários. Os eventos são exibidos em uma grade de dias e horaŕios localizada no painel central da tela. Há um painel secundário que lista as turmas nas quais o Estudante está inscrito e os calendários do estudante. Os items das listas podem ser "ativados" ou "desativados" e funcionam como filtros dos eventos exibidos no painel central.
+
+## Pontos em aberto
+
+- Qual será o período exibido na grade (e.g., de hoje até cinco dias à frente)?
+- Haverá filtro para definir o período selecionado (dica: ver como funciona em outros aplicativos de agenda)?
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/014/cdu_014.md =====
+# CDU-014 Visualizar evento
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: Estudante visualiza as informações detalhadas de um evento. 
+- **Pré-condições**: O estudante está autenticado no sistema. Painel principal está em exibição e apresenta pelo menos um evento.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - Estudante clica em um dos eventos presentes no painel principal.     |                    |
+|                |      2 - Sistema exibe as informações detalhadas do evento selecionado pelo estudante.  TODO: descrever as operações disponíveis na tela/componente de detalhes.     |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+<img width="1304" height="697" alt="image" src="https://github.com/user-attachments/assets/9be3e013-e1d1-4bce-8fd0-b460c9ce22fc" />
+
+
+===== ARQUIVO: ./doc/cdu/015/cdu_015.md =====
+# CDU-015 Atualizar evento
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante atualiza as informações de um evento.
+- **Pré-condição**: O estudante está autenticado no sistema, é administrador do calendário associado ao evento e os detalhes do evento estão em visualização.
+  
+- **Pós-Condição**: Os dados do evento estão atualizados.
+
+## Fluxo Principal
+ 
+1 - O estudante acessa a página de atualização do evento.
+ 
+2 - O sistema exibe o formulário com os dados atuais do evento preenchidos (nome, calendario, data, local e descrição).
+ 
+3 - O estudante altera os campos desejados e clica em "Salvar".
+ 
+4 - O sistema valida os dados e atualiza o evento no banco de dados.
+ 
+
+## Fluxo Alternativo I — Estudante cancela a edição
+ 
+1.1 - O estudante clica em "Cancelar".
+ 
+1.2 - O sistema descarta as alterações e retorna o estudante à tela anterior, sem realizar modificações.
+ 
+
+## Fluxo Alternativo II — Dados inválidos ou campos obrigatórios em branco
+ 
+2.1 - O estudante apaga um campo obrigatório (nome, data ou local) e clica em "Salvar".
+ 
+2.2 - O sistema identifica que há campos inválidos ou em branco e exibe uma mensagem de erro, mantendo o formulário aberto para correção.
+ 
+
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> <img width="1674" height="733" alt="editar_evento" src="https://github.com/user-attachments/assets/2d3840fd-cb13-4080-aff1-894f71f314ed" />
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/016/cdu_016.md =====
+# CDU-016 Deletar evento
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante remove um evento do sistema.
+- **Pré-condição**: O estudante está autenticado no sistema, é administrador do calendário associado ao evento e os detalhes do evento estão em visualização.
+- **Pós-Condição**: O evento não está mais registrado no sistema.
+
+## Fluxo Principal
+ 
+1 - O estudante aciona opção de exclusão do evento.
+ 
+2 - O sistema exibe uma mensagem de aviso informando que a ação não poderá ser desfeita.
+ 
+3 - O estudante clica em "Deletar Evento".
+ 
+4 - O sistema remove o evento do banco de dados e redireciona o estudante.
+ 
+## Fluxo Alternativo I — Estudante cancela a ação de excluir
+ 
+3.1 - O estudante clica em "Cancelar".
+ 
+3.2 - O sistema descarta a operação e retorna o estudante à tela anterior, sem realizar alterações.
+ 
+
+## Fluxo Alternativo II — Estudante não é administrador do calendário associado ao evento
+ 
+1.1 - Sistema não exibe a opção de exclusão do evento.
+ 
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/017/cdu_017.md =====
+# CDU-017 Criar turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante cria uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: A turma está registrada no sistema.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/018/cdu_018.md =====
+# CDU-018 Visualizar turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante visualiza as informações de uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é membro da turma.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/019/cdu_019.md =====
+# CDU-019 Atualizar turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante atualiza as informações de uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador da turma.
+- **Pós-Condição**: Os dados da turma estão atualizados.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/020/cdu_020.md =====
+# CDU-020 Deletar turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante remove uma turma do sistema.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador da turma.
+- **Pós-Condição**: A turma não está mais registrada no sistema.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/021/cdu_021.md =====
+# CDU-021 Adicionar calendário à turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante associa um calendário a uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador da turma.
+- **Pós-Condição**: O calendário está associado à turma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/022/cdu_022.md =====
+# CDU-022 Remover calendário de turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante desassocia um calendário de uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador da turma.
+- **Pós-Condição**: O calendário não está mais associado à turma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/023/cdu_023.md =====
+# CDU-023 Consultar participantes de turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante consulta os participantes de uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é membro da turma.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/024/cdu_024.md =====
+# CDU-024 Remover participante de turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante remove um participante de uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador da turma.
+- **Pós-Condição**: O participante não está mais associado à turma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/025/cdu_025.md =====
+# CDU-025 Alterar permissão de participante de turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante altera as permissões de um participante em uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é administrador da turma.
+- **Pós-Condição**: As permissões do participante estão atualizadas.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/026/cdu_026.md =====
+# CDU-026 Entrar em turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante ingressa em uma turma.
+- **Pré-condição**: Nenhuma.
+- **Pós-Condição**: O estudante está associado à turma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/027/cdu_027.md =====
+# CDU-027 Sair de turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante deixa uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é membro da turma.
+- **Pós-Condição**: O estudante não está mais associado à turma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/028/cdu_028.md =====
+# CDU-028 Atualizar suas preferências de turma
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante atualiza suas preferências em uma turma.
+- **Pré-condição**: O estudante está autenticado no sistema e é membro da turma.
+- **Pós-Condição**: As preferências do estudante na turma estão atualizadas.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/029/cdu_029.md =====
+# CDU-029 Consultar turmas - CASO REMOVIDO
+
+- **Ator principal**: Estudante
+- **Atores secundários**: Nenhum
+- **Descrição**: O estudante consulta suas turmas.
+- **Pré-condição**: O estudante está autenticado no sistema.
+- **Pós-Condição**: Nenhuma.
+
+## Fluxo Principal
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|     1 - ...     |                    |
+|                |      2 - ...      |
+
+## Fluxo Alternativo I - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    1.1 - ...    |                    |
+|                |     1.2 - ...     |
+
+## Fluxo Alternativo II - ...
+
+| Ações do ator | Ações do sistema |
+| :-------------: | :----------------: |
+|    2.1 - ...    |                    |
+|                |     2.2 - ...     |
+
+> Obs. as seções a seguir apenas serão utilizadas na segunda unidade do PDSWeb (segundo orientações do gerente do projeto).
+
+## Diagrama de Interação (Sequência ou Comunicação)
+
+> Substituir pela imagem correspondente...
+
+## Diagrama de Classes de Projeto
+
+> Substituir pela imagem contendo as classes (modelo, visão e templates) que implementam o respectivo CDU...
+
+
+===== ARQUIVO: ./doc/cdu/cdu.md =====
+# Modelo de Casos de Uso
+
+## Histórico de Revisões
+
+|   Data   | Versão  |                              Descrição                               |  Autores  |
+| :------: | ------- | :------------------------------------------------------------------: | :-------: |
+| 24/04/26 | 1       |        Criação dos casos de uso principais sem detalhadamento        | Giordanni |
+| 01/05/26 | 2       |   Divisão de casos de uso grandes em menores. Ainda sem detalhamento | Giordanni |
+| 14/05/26 | 3       | Reorganização modular, padronização e detalhamento inicial dos CDUs  | Giordanni |
+| 09/06/26 | 4       | Remoção e atualização de casos de uso (CDU-008, CDU-013, CDU-029)    | André     |
+
+
+## Diagrama de Casos de Uso
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+
+<img width="320" src="./diagramas/imagens/autenticacao.png" />
+<img width="320" src="./diagramas/imagens/conta.png" />
+<img width="320" src="./diagramas/imagens/calendarios.png" />
+<img width="320" src="./diagramas/imagens/eventos.png" />
+<img width="320" src="./diagramas/imagens/turmas.png" />
+<img width="320" src="./diagramas/imagens/participacao_turmas.png" />
+
+</div>
+
+## Autenticação
+
+* [CDU-001 Entrar](001/cdu_001.md)
+* [CDU-002 Sair](002/cdu_002.md)
+
+## Conta
+
+* [CDU-003 Criar conta](003/cdu_003.md)
+* [CDU-004 Visualizar conta](004/cdu_004.md)
+* [CDU-005 Atualizar conta](005/cdu_005.md)
+* [CDU-006 Deletar conta](006/cdu_006.md)
+
+## Calendários
+
+* [CDU-007 Criar calendário](007/cdu_007.md)
+* ~~CDU-008 Consultar calendários~~
+* [CDU-009 Visualizar calendário](009/cdu_009.md)
+* [CDU-010 Atualizar calendário](010/cdu_010.md)
+* [CDU-011 Deletar calendário](011/cdu_011.md)
+
+## Eventos
+
+* [CDU-012 Criar evento](012/cdu_012.md)
+* [CDU-013 Visualizar quadro geral](013/cdu_013.md)
+* [CDU-014 Visualizar evento](014/cdu_014.md)
+* [CDU-015 Atualizar evento](015/cdu_015.md)
+* [CDU-016 Deletar evento](016/cdu_016.md)
+
+## Turmas
+
+* [CDU-017 Criar turma](017/cdu_017.md)
+* [CDU-018 Visualizar turma](018/cdu_018.md)
+* [CDU-019 Atualizar turma](019/cdu_019.md)
+* [CDU-020 Deletar turma](020/cdu_020.md)
+* [CDU-021 Adicionar calendário à turma](021/cdu_021.md)
+* [CDU-022 Remover calendário de turma](022/cdu_022.md)
+* ~~CDU-029 Consultar turmas~~
+
+## Participação em Turmas
+
+* [CDU-023 Consultar participantes de turma](023/cdu_023.md)
+* [CDU-024 Remover participante de turma](024/cdu_024.md)
+* [CDU-025 Alterar permissão de participante de turma](025/cdu_025.md)
+* [CDU-026 Entrar em turma](026/cdu_026.md)
+* [CDU-027 Sair de turma](027/cdu_027.md)
+* [CDU-028 Atualizar suas preferências de turma](028/cdu_028.md)
+
+
+===== ARQUIVO: ./doc/design/paleta-de-cores/descricao.md =====
+#  Paleta Oficial de Cores do Projeto
+
+---
+
+## Interface
+
+###  Snow
+![Snow](https://singlecolorimage.com/get/FFFFFF/100x100)
+
+**Nome da cor:** Snow  
+**Código HEX:** `#FFFFFF`  
+**Código RGB:** `rgb(255, 255, 255)`
+
+---
+
+###  WhiteSmoke
+![WhiteSmoke](https://singlecolorimage.com/get/F0F0F0/100x100)
+
+**Nome da cor:** WhiteSmoke  
+**Código HEX:** `#F0F0F0`  
+**Código RGB:** `rgb(240, 240, 240)`
+
+---
+
+###  Preto
+![Preto](https://singlecolorimage.com/get/000000/100x100)
+
+**Nome da cor:** Preto  
+**Código HEX:** `#000000`  
+**Código RGB:** `rgb(0, 0, 0)`
+
+---
+
+###  Light Grey
+![Light Grey](https://singlecolorimage.com/get/D9D9D9/100x100)
+
+**Nome da cor:** Light Grey  
+**Código HEX:** `#D9D9D9`  
+**Código RGB:** `rgb(217, 217, 217)`
+
+---
+
+### Grey Cloud
+![Grey Cloud](https://singlecolorimage.com/get/B6B6B6/100x100)
+
+**Nome da cor:** Grey Cloud  
+**Código HEX:** `#B6B6B6`  
+**Código RGB:** `rgb(182, 182, 182)`
+
+---
+
+###  Smokey Grey
+![Smokey Grey](https://singlecolorimage.com/get/717070/100x100)
+
+**Nome da cor:** Smokey Grey  
+**Código HEX:** `#717070`  
+**Código RGB:** `rgb(113, 112, 112)`
+
+---
+
+#  Cores de Pré-Seleção
+
+## Vermelhos
+
+###  Bittersweet
+![Bittersweet](https://singlecolorimage.com/get/FF6366/100x100)
+
+**Nome da cor:** Bittersweet  
+**Código HEX:** `#FF6366`  
+**Código RGB:** `rgb(255, 99, 102)`
+
+---
+
+###  Lava
+![Lava](https://singlecolorimage.com/get/D61212/100x100)
+
+**Nome da cor:** Lava  
+**Código HEX:** `#D61212`  
+**Código RGB:** `rgb(214, 18, 18)`
+
+---
+
+###  Crimson Red
+![Crimson Red](https://singlecolorimage.com/get/A60000/100x100)
+
+**Nome da cor:** Crimson Red  
+**Código HEX:** `#A60000`  
+**Código RGB:** `rgb(166, 0, 0)`
+
+---
+
+## Laranjas
+
+###  Pêssego
+![Pêssego](https://singlecolorimage.com/get/FFBC82/100x100)
+
+**Nome da cor:** Pêssego  
+**Código HEX:** `#FFBC82`  
+**Código RGB:** `rgb(255, 188, 130)`
+
+---
+
+###  Cadmium Orange
+![Cadmium Orange](https://singlecolorimage.com/get/F28C33/100x100)
+
+**Nome da cor:** Cadmium Orange  
+**Código HEX:** `#F28C33`  
+**Código RGB:** `rgb(242, 140, 51)`
+
+---
+
+###  Bourbon
+![Bourbon](https://singlecolorimage.com/get/BD6E28/100x100)
+
+**Nome da cor:** Bourbon  
+**Código HEX:** `#BD6E28`  
+**Código RGB:** `rgb(189, 110, 40)`
+
+---
+
+## Verdes
+
+###  Light Green
+![Light Green](https://singlecolorimage.com/get/77FF72/100x100)
+
+**Nome da cor:** Light Green  
+**Código HEX:** `#77FF72`  
+**Código RGB:** `rgb(119, 255, 114)`
+
+---
+
+###  Lime Green
+![Lime Green](https://singlecolorimage.com/get/10B70A/100x100)
+
+**Nome da cor:** Lime Green  
+**Código HEX:** `#10B70A`  
+**Código RGB:** `rgb(16, 183, 10)`
+
+---
+
+###  Pine
+![Pine](https://singlecolorimage.com/get/1E681C/100x100)
+
+**Nome da cor:** Pine  
+**Código HEX:** `#1E681C`  
+**Código RGB:** `rgb(30, 104, 28)`
+
+---
+
+## Azuis
+
+###  Lavender Blue
+![Lavender Blue](https://singlecolorimage.com/get/6B97FF/100x100)
+
+**Nome da cor:** Lavender Blue  
+**Código HEX:** `#6B97FF`  
+**Código RGB:** `rgb(107, 151, 255)`
+
+---
+
+###  Royal Blue
+![Royal Blue](https://singlecolorimage.com/get/1D61FF/100x100)
+
+**Nome da cor:** Royal Blue  
+**Código HEX:** `#1D61FF`  
+**Código RGB:** `rgb(29, 97, 255)`
+
+---
+
+###  Royal Azure
+![Royal Azure](https://singlecolorimage.com/get/0033A9/100x100)
+
+**Nome da cor:** Royal Azure  
+**Código HEX:** `#0033A9`  
+**Código RGB:** `rgb(0, 51, 169)`
+
+---
+
+## Cianos
+
+###  Blue Lagoon
+![Blue Lagoon](https://singlecolorimage.com/get/99F0FF/100x100)
+
+**Nome da cor:** Blue Lagoon  
+**Código HEX:** `#99F0FF`  
+**Código RGB:** `rgb(153, 240, 255)`
+
+---
+
+###  Celeste
+![Celeste](https://singlecolorimage.com/get/5DE7FF/100x100)
+
+**Nome da cor:** Celeste  
+**Código HEX:** `#5DE7FF`  
+**Código RGB:** `rgb(93, 231, 255)`
+
+---
+
+###  Curious Blue
+![Curious Blue](https://singlecolorimage.com/get/25A6BC/100x100)
+
+**Nome da cor:** Curious Blue  
+**Código HEX:** `#25A6BC`  
+**Código RGB:** `rgb(37, 166, 188)`
+
+---
+
+## Roxos
+
+###  Lavender
+![Lavender](https://singlecolorimage.com/get/B382F7/100x100)
+
+**Nome da cor:** Lavender  
+**Código HEX:** `#B382F7`  
+**Código RGB:** `rgb(179, 130, 247)`
+
+---
+
+###  Lovely Purple
+![Lovely Purple](https://singlecolorimage.com/get/7D3ADA/100x100)
+
+**Nome da cor:** Lovely Purple  
+**Código HEX:** `#7D3ADA`  
+**Código RGB:** `rgb(125, 58, 218)`
+
+---
+
+###  Indigo
+![Indigo](https://singlecolorimage.com/get/4500A6/100x100)
+
+**Nome da cor:** Indigo  
+**Código HEX:** `#4500A6`  
+**Código RGB:** `rgb(69, 0, 166)`
+
+---
+
+## Rosas
+
+###  Light Fuchsia
+![Light Fuchsia](https://singlecolorimage.com/get/EC8DFF/100x100)
+
+**Nome da cor:** Light Fuchsia  
+**Código HEX:** `#EC8DFF`  
+**Código RGB:** `rgb(236, 141, 255)`
+
+---
+
+###  Fuchsia
+![Fuchsia](https://singlecolorimage.com/get/D820FD/100x100)
+
+**Nome da cor:** Fuchsia  
+**Código HEX:** `#D820FD`  
+**Código RGB:** `rgb(216, 32, 253)`
+
+---
+
+###  Barney
+![Barney](https://singlecolorimage.com/get/9B1AB5/100x100)
+
+**Nome da cor:** Barney  
+**Código HEX:** `#9B1AB5`  
+**Código RGB:** `rgb(155, 26, 181)`
+
+---
+
+===== ARQUIVO: ./doc/design/prototipos.md =====
+# Protótipos de Interface com o Usuário
+
+## Histórico de Revisões
+
+| Data | Versão | Descrição | Autores |
+| :--: | :----: | :-------: | :-----: |
+| 10/04/2026 | 1 | Versão inicial |  Giordanni |
+| - | - | - |  - |
+
+## 1. Mapa do Site
+
+<!-- > Obs.: propõem-se a utilização de alguma ferramenta que possibilite a representação textual do diagrama. como o seguinte exemplo: -->
+
+```mermaid
+flowchart
+    A([Calendário]) --> B([Turmas])
+    A --> C([Disciplinas])
+    A --> D([Atividades])
+ 
+    B --> B1[Lista]
+    B --> B2[Nova Turma]
+    
+
+    C --> C1[Lista]
+    C --> C2[Nova Disciplina]
+
+    D --> D1[Lista]
+    D --> D2[Nova atividade]
+```
+[LINK PARA O PROTÓTIPO NO FIGMA](https://www.figma.com/design/i93eN1r3KeTMjRQTGFBYK9/Projeto-CAP?node-id=2116-2&t=XqjvNB2PL1zuMOC6-1)
+
+### A. Tela 1: Index
+
+![Ilustração da Tela 1](imgs/tela-inicial.jpg)
+<!-- > Obs. Substituir pela captura das imagens, sejam elas provenientes do Figma (anexar também o link para o Figma) ou já em HTML e CSS... -->
+
+[LINK para Figma com o protótipo](https://www.figma.com/design/jx7SPrYMZ6xO9VjKgnUf2Q/Untitled?node-id=29-2&t=6IfTibURJLB86N1C-1)
+
+### B. Tela 2: Entrar em Turma
+
+![Ilustração da Tela 2](imgs/tela-entrar_turma.jpg)
+<!-- > Obs. Substituir pela captura das imagens, sejam elas provenientes do Figma (anexar também o link para o Figma) ou já em HTML e CSS... -->
+
+[LINK para Figma com o protótipo](https://www.figma.com/design/jx7SPrYMZ6xO9VjKgnUf2Q/Untitled?node-id=29-2&t=6IfTibURJLB86N1C-1)
+
+### C. Tela 3: Turma
+
+![Ilustração da Tela 2](imgs/tela-turma.jpg)
+<!-- > Obs. Substituir pela captura das imagens, sejam elas provenientes do Figma (anexar também o link para o Figma) ou já em HTML e CSS... -->
+
+[LINK para Figma com o protótipo](https://www.figma.com/design/jx7SPrYMZ6xO9VjKgnUf2Q/Untitled?node-id=29-2&t=6IfTibURJLB86N1C-1)
+
+
+===== ARQUIVO: ./doc/dominio/dominio.md =====
+# Modelo de Domínio
+
+## Histórico de Revisões
+
+| Data | Versão | Descrição | Autores |
+| :--: | :----: | :-------: | :-----: |
+| 12/06 | 1 | Criaçã do digrama de classes | Giordanni |
+| - | - | - |  - |
+
+
+## 1. Diagrama das Classes Conceituais do Domínio
+
+![Substitua pela imagem do diagrama de classes de domínio...](diagrama_de_classes.png)
+> Substitua pela imagem do diagrama de classes de domínio...
+
+## 2. Glossário (sugestão)
+
+| Termo | Explicação |
+| :---: | :--------: |
+| Termo 1 | Explicação 1... |
+| Termo 2 | Explicação 2... |
+
+
+===== ARQUIVO: ./doc/guia-ds/guia.md =====
+# Guia do Desenvolvedor 
+
+**Histórico de Alterações:**
+| Versão | Autor | Data |
+|--------|-------|------|
+|  1.0  | Fellipe Aleixo | 11 de abril de 2023 |
+
+# Projeto de Desenvolvimento de Sistemas Web
+
+## A. Preparativos para se trabalhar com o GitHub
+
+1. Na sua máquina local DEVE ser verificada se já existem chaves SSH (previamente geradas) - [GUIA de como verificar a existência de chaves SSH](https://docs.github.com/pt/authentication/managing-commit-signature-verification/checking-for-existing-gpg-keys);
+1. Não existindo, deve ser criado um par de chaves SSH - [GUIA de como criar chaves SSH](https://docs.github.com/pt/authentication/managing-commit-signature-verification/generating-a-new-gpg-key);
+1. Uma vez criadas as chaves, a chave pública DEVE ser associada a uma conta do GitHub - [GUIA de como adicionar uma chave pública a uma conta do GitHub](https://docs.github.com/pt/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account);
+
+
+## B. Clonando o Projeto na Máquina Local
+
+1. Antes de iniciar os trabalhos, o projeto precisa ser clonado na máquina local. Para tanto é necessário que o processo de configuração das chaves SSH tenha ocorrido anteriormente;
+~~~shell
+$ git clone https://github.com/tads-cnat/exemplo.git
+~~~
+
+## C. Fluxo ao Ser Atribuído em Tarefas
+
+1. Uma nova tarefa é atribuída a um desenvolvedor;
+1. O desenvolvedor lê a tarefa e solicita possíveis esclarecimentos ao gerente a partir de comentários na tarefa, marcando o gerente;
+1. **[opcional]** se a tarefa for considerada muito grande, a mesma "pode" ser quebrada em tarefas menores e atribuídas a um dos membros da equipe;
+1. Para a realização da tarefa, DEVE ser criado um novo ramo (*branch*) do ramo principal (*main*). **Padrão**: ((num da issue))-nome-projeto - o que pode ser feito a partir da interface do GitHub;
+1. As contribuições individuais DEVEM ser intergadas ao ramo de trabalho, através de *commits*;
+1. Quando o trabalho atingir um nível intermediário, o gerente pode ser notificado do progresso a partir da abertura de uma solicitação de integração (*Pull Request*). O gerente deve ser atribuído como responsável pelo *Pull Request*;
+1. O gerente pode avaliar as entregas parciais e esclarecer possíveis dúvidas ou solicitar correções através de comentários adicionados ao *Pull Request*, marcando o desenvolvedor rsposnável pelas correções;
+1. O desenvolvedor responsável realiza as correções e ajustes solicitados e integra os mesmos através de novos *commits*;
+1. Ao final do trabalho o *Pull Request* é sinalizado que não trata-se de um rascunho (*draft*);
+1. O gerente integra o resultado do trabalho (contido na *branch* de trabalho) à *branch* princial (*main*).
+
+## D. Passos do Trabalho Diário com o Git
+
+- Inicialmente, o repositório local DEVE ser sincronizado com as possíveis novidades do repositório remoto (*origin*);
+~~~shell
+$ git fetch origin
+~~~
+- Deve ser verificado se o desenvolvedor se encontra da *branch* de trabalho;
+~~~shell
+$ git status
+~~~ 
+- Caso não esteja no lugar certo, deve acessar a *branch* de trabalho;
+~~~shell
+$ git checkout branch-de-trabalho
+~~~
+- Só então as contribuições no código poderão ser realizadas. Uma vez que as contribuições foram realizadas (edição de arquivos do projeto), as mesmas podem ser "salvas" no repositório;
+~~~shell
+$ git status
+$ git add arquivo-modificado
+$ git commit -m "Descrição resumo do que foi implementado."
+~~~
+- Ao finalizar o dia de trabalho, é uma boa prática que o repositório local seja sincronizado com o repositório remoto.
+~~~shell
+$ git push
+~~~
+
+```mermaid
+---
+title: Trabalho Diário no Git
+---
+flowchart TD
+    inicio[Início]
+    fetch[$ git fetch origin]
+    status[$ git status]
+    se1{Branch correta?}
+    se2{Concluiu?}
+    checkout[$ git checkout branch-de-trabalho]
+    edita[Implementa os incrementos nos arquivos do projeto]
+    commit1[$ git add arquivo-modificado]
+    commit2[$ git commit -m ''Descreve implementação realizada.'']
+    push[$ git push]
+    merge[Criar um Pull Request para a branch de trabalho]
+    
+    inicio --> fetch
+    fetch --> status
+    status --> se1
+    se1 -->|sim| edita
+    se1 -->|não| checkout
+    checkout --> edita
+    edita --> commit1
+    commit1 --> commit2
+    commit2 --> push
+    push --> se2
+    se2 -->|não| edita
+    se2 -->|sim| merge
+```
+
+
+===== ARQUIVO: ./doc/visao/doc-visao.md =====
+# Documento de Visão
+
+## Histórico de Revisões
+
+| Data | Versão | Descrição | Autores |
+| :--: | :----: | :-------: | :-----: |
+| 10/04/2026 | 1.0 | Versão inicial |  Carlos Danilo |
+| 14/05/2026 | 2.0 | Requisitos |  Carlos Danilo  |
+
+
+## 1. Visão Geral do Sistema Proposto
+
+O sistema proposto tem como objetivo centralizar, em um único ambiente, todas as informações acadêmicas importantes para os alunos, prazos, materiais e cronogramas. Ele funciona como um sistema desenvolvido especificamente para a organização estudantil, oferecendo aos alunos um espaço unificado de consulta e planejamento.
+Além disso, o sistema busca facilitar o acompanhamento das responsabilidades acadêmicas, reduzindo a dispersão de informações entre diferentes plataformas e melhorando a organização pessoal dos estudantes. A proposta também incentiva a colaboração entre os membros de uma mesma turma, permitindo que informações relevantes sejam compartilhadas e mantidas atualizadas de forma coletiva.
+
+
+## 2. Descrição do Problema
+| - | - |
+| :-: | :-: |
+| **Problema** |Ausência de um local adequado para organizar informações acadêmicas, levando os estudantes a utilizarem aplicativos que não foram pensados para esse fim |
+| **Afeta** |Estudantes que precisam lidar com materiais de aula, atividades , mudanças no cronogramas publicados em locais distintos |  
+| **Impacta** | organização acadêmica,cumprimento de prazos e acompanhamento das aulas |
+| **Solução** | Criar um sistema que permita aos alunos centralizarem e organizarem todas as informações de forma independente da plataforma utilizada pelos docentes| 
+
+## 3. Descrição dos Usuários 
+
+| Usuário | Descrição | Responsabilidades |
+| :--- | :--- | :--- |
+| Aluno | Estudantes que desejam ver as atividades, materiais e cronogramas de aula | Utilizar o sistema, consultar informações prontas e organizar seu calendário pessoal. |
+| Representante / Líder de Turma | Alunos responsáveis por organizar e manter atualizadas as informações principais do sistema, garantindo que o conteúdo base esteja pronto para todos os colegas. | Organizar e atualizar o conteúdo base, validar informações e manter o sistema completo para a turma |
+
+## 4. Descrição do Ambiente dos Usuários
+
+| Usuário | Ambiente operacional |
+| :--- | :--- |
+| Aluno | Computadores |
+
+
+## 5. Principais Necessidades dos Usuários
+
+> Apresentadas no formato de tópicos
+1. **Aluno**
+   - Unificar atividades e prazos em um só lugar.
+   - Acessar todos os materiais de aula facilmente.
+   - Receber avisos de prazos importantes.
+   - Visualizar mudanças de horário ou sala rapidamente.
+   - Visualizar um calendário completo e organizado.
+1. **Representante / Líder de Turma**
+   - Validar informações adicionadas pelos colegas.
+   - Atualizar cronogramas conforme avisos dos professores
+   - Facilitar a comunicação entre os estudantes
+
+
+## 6. Alternativas Concorrentes
+
+1. **Google Classroom**
+   - Ótima organização para materiais e atividades
+   - Depende do engajamento do professor para suprir as necessidades dos alunos
+1. **SUAP**
+   - Plataforma institucional oficial com funcionalidades acadêmicas
+   - Uso inconsistente pelos professores
+
+## 7. Regras de Negócio
+
+| ID  | Regra | Descrição |
+| :-: | :---: | :-------: |
+| RN01 | Associação de Evento ao Calendário | Todo evento deve estar associado a exatamente um calendário |
+| RN02 | Herança de Cor do Calendário | Todo calendário deve ter uma cor, da qual todos os seus eventos herdam |
+| RN03 | Existência de Administrador | Toda turma e todo calendário deve ter pelo menos um administrador |
+
+## 8. Requisitos Funcionais
+
+| Código | Nome | Descrição | Prioridade |
+| :----: | :--: | :-------: | :--------: |
+| RF01 | Gerir conta | Permitir que o usuário crie, visualize, atualize e exclua sua conta | Alta |
+| RF02 | Atutenticação | Permitir que o usuário entre e saia do sistema | Alta |
+| RF03 | Gerir calendário | Permitir criar, visualizar, atualizar e excluir calendários (pessoais e acadêmicos)| Alta |
+| RF04 | Gerir calendário da turma | Permitir adicionar e remover e listas calendários de turma | Alta |
+| RF05 | Gerir evento de calendário | Permitir adicionar, remover e listar calendários de uma turma | Alta |
+| RF06 | Gerir turma | Permitir que o estudante crie, visualize, atualize e exclua turmas | Alta |
+| RF07 | Gerir membro de turma | Permitir adicionar, remover e alterar permissões de participantes da turma. Permitir também listar os participantes | Alta |
+| RF08 | Gerir suas inscrições em turma | Permitir que o aluno entre e saia de turmas e atualize suas preferencias de turma | Alta |
+> **Prioridade**: alta, média ou baixa
+
+## 9. Requisitos Não-Funcionais
+| Código | Nome | Descrição | Categoria | Classificação |
+| :----: | :--: | :-------: | :-------: | :-----------: |
+| NF01 | Tempo de resposta | O sistema deve carregar os eventos em até 10 segundos | Performance | Desejável |
+| NF02 | Interface objetiva | O layout deve permitir que o usuário identifique seus compromissos principais rapidamente após o login | Usabilidade | Obrigatório |
+| NF03 | Autenticação | O usuário deve ser autenticado no sistema para poder usá-lo | Suportabilidade | Obrigatório |
+| NF04 | Segurança de dados | Dados pessoais e materiais devem ser armazenados e transmitidos de forma segura | Segurança | Obrigatório |
+| NF05 | Disponibilidade do site | O tempo de atividade deve ser de 24 horas por dia | Confiabilidade | Obrigatório |
+
+
+> **Categoria**: usabilidade, confiabilidade, performance, suportabilidade, restrição de projeto, implementação, interface e requisito físico - segundo classificação [FURP+](https://pt.wikipedia.org/wiki/FURPS).
+
+> **Classificação**: desejável ou obrigatório.
+
+
+===== ARQUIVO: ./estrutura_projeto.txt =====
+.
+./.gitignore
+./README.md
+./doc
+./doc/arquivo_astah
+./doc/arquivo_astah/nome_do_projeto.asta
+./doc/bd
+./doc/bd/bd.md
+./doc/bd/imgs
+./doc/bd/imgs/placeholder.png
+./doc/cdu
+./doc/cdu/001
+./doc/cdu/001/cdu_001.md
+./doc/cdu/002
+./doc/cdu/002/cdu_002.md
+./doc/cdu/003
+./doc/cdu/003/cdu_003.md
+./doc/cdu/004
+./doc/cdu/004/cdu_004.md
+./doc/cdu/005
+./doc/cdu/005/cdu_005.md
+./doc/cdu/006
+./doc/cdu/006/cdu_006.md
+./doc/cdu/007
+./doc/cdu/007/cdu_007.md
+./doc/cdu/008
+./doc/cdu/008/cdu_008.md
+./doc/cdu/009
+./doc/cdu/009/cdu_009.md
+./doc/cdu/010
+./doc/cdu/010/cdu_010.md
+./doc/cdu/011
+./doc/cdu/011/cdu_011.md
+./doc/cdu/012
+./doc/cdu/012/cdu_012.md
+./doc/cdu/013
+./doc/cdu/013/cdu_013.md
+./doc/cdu/014
+./doc/cdu/014/cdu_014.md
+./doc/cdu/015
+./doc/cdu/015/cdu_015.md
+./doc/cdu/016
+./doc/cdu/016/cdu_016.md
+./doc/cdu/017
+./doc/cdu/017/cdu_017.md
+./doc/cdu/018
+./doc/cdu/018/cdu_018.md
+./doc/cdu/019
+./doc/cdu/019/cdu_019.md
+./doc/cdu/020
+./doc/cdu/020/cdu_020.md
+./doc/cdu/021
+./doc/cdu/021/cdu_021.md
+./doc/cdu/022
+./doc/cdu/022/cdu_022.md
+./doc/cdu/023
+./doc/cdu/023/cdu_023.md
+./doc/cdu/024
+./doc/cdu/024/cdu_024.md
+./doc/cdu/025
+./doc/cdu/025/cdu_025.md
+./doc/cdu/026
+./doc/cdu/026/cdu_026.md
+./doc/cdu/027
+./doc/cdu/027/cdu_027.md
+./doc/cdu/028
+./doc/cdu/028/cdu_028.md
+./doc/cdu/029
+./doc/cdu/029/cdu_029.md
+./doc/cdu/cdu.md
+./doc/cdu/diagramas
+./doc/cdu/diagramas/imagens
+./doc/cdu/diagramas/puml
+./doc/design
+./doc/design/imgs
+./doc/design/imgs/tela-entrar_turma.jpg
+./doc/design/imgs/tela-inicial.jpg
+./doc/design/imgs/tela-turma.jpg
+./doc/design/imgs/ux-wireframe-01.png
+./doc/design/logo-projeto
+./doc/design/logo-projeto/logo-opções-1.jpg
+./doc/design/logo-projeto/logo-opções-2.png
+./doc/design/logo-projeto/logo-principal-fundo.png
+./doc/design/logo-projeto/logo-principal.png
+./doc/design/paleta-de-cores
+./doc/design/paleta-de-cores/descricao.md
+./doc/design/paleta-de-cores/paleta.png
+./doc/design/prototipos.md
+./doc/design/tela_inicial.png
+./doc/dominio
+./doc/dominio/diagrama_de_classes.png
+./doc/dominio/diagrama_de_classes.puml
+./doc/dominio/dominio.md
+./doc/guia-ds
+./doc/guia-ds/guia.md
+./doc/visao
+./doc/visao/doc-visao.md
+./estrutura_projeto.txt
+./mysite
+./mysite/apps
+./mysite/apps/calendarios
+./mysite/apps/calendarios/__init__.py
+./mysite/apps/calendarios/admin.py
+./mysite/apps/calendarios/apps.py
+./mysite/apps/calendarios/migrations
+./mysite/apps/calendarios/models
+./mysite/apps/calendarios/templates
+./mysite/apps/calendarios/tests.py
+./mysite/apps/calendarios/views.py
+./mysite/apps/core
+./mysite/apps/core/__init__.py
+./mysite/apps/core/admin.py
+./mysite/apps/core/apps.py
+./mysite/apps/core/migrations
+./mysite/apps/core/static
+./mysite/apps/core/templates
+./mysite/apps/core/tests.py
+./mysite/apps/core/urls.py
+./mysite/apps/core/views.py
+./mysite/apps/eventos
+./mysite/apps/eventos/__init__.py
+./mysite/apps/eventos/admin.py
+./mysite/apps/eventos/apps.py
+./mysite/apps/eventos/migrations
+./mysite/apps/eventos/models
+./mysite/apps/eventos/static
+./mysite/apps/eventos/templates
+./mysite/apps/eventos/tests.py
+./mysite/apps/eventos/urls.py
+./mysite/apps/eventos/views.py
+./mysite/apps/turmas
+./mysite/apps/turmas/__init__.py
+./mysite/apps/turmas/admin.py
+./mysite/apps/turmas/apps.py
+./mysite/apps/turmas/migrations
+./mysite/apps/turmas/models
+./mysite/apps/turmas/templates
+./mysite/apps/turmas/tests.py
+./mysite/apps/turmas/views.py
+./mysite/apps/usuarios
+./mysite/apps/usuarios/__init__.py
+./mysite/apps/usuarios/admin.py
+./mysite/apps/usuarios/apps.py
+./mysite/apps/usuarios/migrations
+./mysite/apps/usuarios/models
+./mysite/apps/usuarios/templates
+./mysite/apps/usuarios/tests.py
+./mysite/apps/usuarios/views.py
+./mysite/config
+./mysite/config/__init__.py
+./mysite/config/asgi.py
+./mysite/config/settings
+./mysite/config/settings/base.py
+./mysite/config/settings/development.py
+./mysite/config/settings/production.py
+./mysite/config/settings/testing.py
+./mysite/config/urls.py
+./mysite/config/wsgi.py
+./mysite/db_development.sqlite3
+./mysite/manage.py
+./mysite2
+./mysite2/apps
+./mysite2/apps/eventos
+./mysite2/apps/eventos/static
+./mysite2/apps/eventos/templates
+./requirements.txt
+mysite/apps/calendarios/__init__.py
+mysite/apps/calendarios/admin.py
+mysite/apps/calendarios/apps.py
+mysite/apps/calendarios/migrations/__init__.py
+mysite/apps/calendarios/models/__init__.py
+mysite/apps/calendarios/models/calendario.py
+mysite/apps/calendarios/models/membro_de_calendario.py
+mysite/apps/calendarios/templates/calendario.html
+mysite/apps/calendarios/templates/criar_calendario.html
+mysite/apps/calendarios/templates/listar_participantes_de_calendario.html
+mysite/apps/calendarios/tests.py
+mysite/apps/calendarios/views.py
+mysite/apps/core/__init__.py
+mysite/apps/core/admin.py
+mysite/apps/core/apps.py
+mysite/apps/core/migrations/__init__.py
+mysite/apps/core/static/core/css/base.css
+mysite/apps/core/static/core/css/cores.css
+mysite/apps/core/static/core/css/inicio.css
+mysite/apps/core/static/core/css/menu_lateral.css
+mysite/apps/core/templates/core/base.html
+mysite/apps/core/templates/core/inicio.html
+mysite/apps/core/templates/core/menu_lateral.html
+mysite/apps/core/tests.py
+mysite/apps/core/urls.py
+mysite/apps/core/views.py
+mysite/apps/eventos/__init__.py
+mysite/apps/eventos/admin.py
+mysite/apps/eventos/apps.py
+mysite/apps/eventos/migrations/__init__.py
+mysite/apps/eventos/models/__init__.py
+mysite/apps/eventos/models/evento.py
+mysite/apps/eventos/static/eventos/css/criar_calendario.css
+mysite/apps/eventos/static/eventos/css/style.css
+mysite/apps/eventos/static/eventos/css/vizualizar_evento.css
+mysite/apps/eventos/static/eventos/js/criar_calendario.js
+mysite/apps/eventos/static/eventos/js/evento.js
+mysite/apps/eventos/static/eventos/js/vizualizar_evento.js
+mysite/apps/eventos/templates/eventos/modal_criar_calendario.html
+mysite/apps/eventos/templates/eventos/modal_criar_evento.html
+mysite/apps/eventos/templates/eventos/modal_criar_turma.html
+mysite/apps/eventos/templates/eventos/modal_editar_evento.html
+mysite/apps/eventos/templates/eventos/modal_vizualizar_evento.html
+mysite/apps/eventos/templates/eventos/teste_modal.html
+mysite/apps/eventos/tests.py
+mysite/apps/eventos/urls.py
+mysite/apps/eventos/views.py
+mysite/apps/turmas/__init__.py
+mysite/apps/turmas/admin.py
+mysite/apps/turmas/apps.py
+mysite/apps/turmas/migrations/__init__.py
+mysite/apps/turmas/models/__init__.py
+mysite/apps/turmas/models/membro_de_turma.py
+mysite/apps/turmas/models/turma.py
+mysite/apps/turmas/templates/entrar_em_turma.html
+mysite/apps/turmas/templates/listar_calendarios_de_turma.html
+mysite/apps/turmas/templates/listar_participantes_de_turma.html
+mysite/apps/turmas/templates/turma.html
+mysite/apps/turmas/tests.py
+mysite/apps/turmas/views.py
+mysite/apps/usuarios/__init__.py
+mysite/apps/usuarios/admin.py
+mysite/apps/usuarios/apps.py
+mysite/apps/usuarios/migrations/__init__.py
+mysite/apps/usuarios/models/__init__.py
+mysite/apps/usuarios/models/usuario.py
+mysite/apps/usuarios/templates/meu_perfil.html
+mysite/apps/usuarios/tests.py
+mysite/apps/usuarios/views.py
+mysite/config/__init__.py
+mysite/config/asgi.py
+mysite/config/settings/base.py
+mysite/config/settings/development.py
+mysite/config/settings/production.py
+mysite/config/settings/testing.py
+mysite/config/urls.py
+mysite/config/wsgi.py
+mysite/manage.py
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/admin.py =====
+from django.contrib import admin
+
+# Register your models here.
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/apps.py =====
+from django.apps import AppConfig
+
+
+class CalendariosConfig(AppConfig):
+    name = "apps.calendarios"
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/migrations/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/models/__init__.py =====
+from .calendario import Calendario
+from .membro_de_calendario import MembroDeCalendario
+
+===== ARQUIVO: ./mysite/apps/calendarios/models/calendario.py =====
+from django.db import models
+
+
+class Calendario(models.Model):
+    ...
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/models/membro_de_calendario.py =====
+from django.db import models
+
+
+class MembroDeCalendario(models.Model):
+    ...
+
+===== ARQUIVO: ./mysite/apps/calendarios/templates/calendario.html =====
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/templates/criar_calendario.html =====
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/templates/listar_participantes_de_calendario.html =====
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/tests.py =====
+from django.test import TestCase
+
+# Create your tests here.
+
+
+===== ARQUIVO: ./mysite/apps/calendarios/views.py =====
+from django.shortcuts import render
+
+# Create your views here.
+
+
+===== ARQUIVO: ./mysite/apps/core/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/core/admin.py =====
+from django.contrib import admin
+
+# Register your models here.
+
+
+===== ARQUIVO: ./mysite/apps/core/apps.py =====
+from django.apps import AppConfig
+
+
+class CoreConfig(AppConfig):
+    name = "apps.core"
+
+
+===== ARQUIVO: ./mysite/apps/core/migrations/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/core/static/core/css/base.css =====
+@import url('cores.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: Inter, sans-serif;
+    background-color: var(--cor-de-fundo-1);
+    display: flex;
+}
+
+===== ARQUIVO: ./mysite/apps/core/static/core/css/cores.css =====
+:root {
+    --cor-de-fundo-1: #FFFFFD;
+    --cor-de-fundo-2: #F0F0F0;
+    --cor-de-fundo-3: #D9D9D9;
+    --cor-de-fundo-4: #B6B6B6;
+
+    --cor-de-fonte-1: #000000;
+    --cor-de-fonte-2: #717070;
+}
+.paleta-de-cores-1 {
+    --cor-clara: #FF6366;
+    --cor-media: #D61212;
+    --cor-escura: #A60000;
+}
+.paleta-de-cores-2 {
+    --cor-clara: #FFBC82;
+    --cor-media: #F28C33;
+    --cor-escura: #BD6E28;
+}
+.paleta-de-cores-3 {
+    --cor-clara: #77EF72;
+    --cor-media: #10B70A;
+    --cor-escura: #1E681C;
+}
+.paleta-de-cores-4 {
+    --cor-clara: #6B97FF;
+    --cor-media: #1D61FF;
+    --cor-escura: #0033A9;
+}
+.paleta-de-cores-5 {
+    --cor-clara: #99F0FF;
+    --cor-media: #5DE7FF;
+    --cor-escura: #25A6BC;
+}
+.paleta-de-cores-6 {
+    --cor-clara: #B382F7;
+    --cor-media: #7D3ADA; 
+    --cor-escura: #4500A6;
+}
+.paleta-de-cores-7 {
+    --cor-clara: #EC8DFF;
+    --cor-media: #D820FD;
+    --cor-escura: #9B1AB5;
+}
+.paleta-de-cores-8 {
+    --cor-clara: #9f9f9f;
+    --cor-media: #707070;
+}
+
+===== ARQUIVO: ./mysite/apps/core/static/core/css/inicio.css =====
+
+
+===== ARQUIVO: ./mysite/apps/core/static/core/css/menu_lateral.css =====
+#menu-lateral {
+    width: 400px;
+    min-height: 100vh;
+    background-color: var(--cor-de-fundo-2);
+    padding: 10px 0;
+}
+.container-menu-lateral {
+    padding: 0 15px;
+}
+.container-de-icone {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icone-de-menu {
+    width: 25px;
+}
+.icone-criar-calendario,
+.icone-criar-turma{
+    width: 16px;
+}
+.icone-entrar-em-turma {
+    width: 13px;
+}
+#topo {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+#topo .container-de-icone {
+    width: 30px;
+    height: 30px;
+}
+#perfil {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    background-color: #7E4FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-de-menu {
+    width: 100%;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.item-de-menu > :not(a) {
+    flex-shrink: 0;
+}
+
+.item-de-menu button {
+    width: 24px;
+    height: 24px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+
+    background-color: var(--cor-clara);
+    border-color: var(--cor-clara);
+}
+
+.ocultar-eventos button {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--cor-clara);
+}
+
+.item-de-menu a {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 1;
+}
+
+.opcoes {
+    margin-left: auto;
+    padding-left: 5px;
+    display: none;
+    gap: 5px;
+}
+
+.opcoes .adicionar-evento {
+    width: 15px;
+}
+
+.opcoes .mais-opcoes {
+    width: 17px;
+}
+
+.item-de-menu:hover {
+    background-color: var(--cor-de-fundo-3);
+}
+.item-de-menu:hover a{
+    text-decoration: underline;
+}
+.item-de-menu:hover .opcoes {
+    display: flex;
+}
+.calendarios-de-turma {
+    margin-left: 50px;
+}
+.turma.fechado .calendarios-de-turma {
+    display: none;
+}
+
+===== ARQUIVO: ./mysite/apps/core/templates/core/base.html =====
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/menu_lateral.css' %}">
+    <link rel="stylesheet" href="{% static 'eventos/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'eventos/css/criar_calendario.css' %}">
+    {% block extra_css %}{% endblock %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+    
+    {% include "core/menu_lateral.html" %}
+    {% include "eventos/modal_criar_evento.html" %}
+    {% include "eventos/modal_criar_calendario.html" %}
+    {% include "eventos/modal_editar_evento.html" %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <script src="{% static 'eventos/js/criar_calendario.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openCreateTest = document.getElementById('criarcalendarioModal');
+
+            if (openCreateTest) {
+                openCreateTest.addEventListener('click', function() {
+                    if (typeof openCreateModal === 'function') {
+                        openCreateModal();
+                    }
+                });
+            }
+
+        });
+    </script>
+
+</html>
+
+===== ARQUIVO: ./mysite/apps/core/templates/core/inicio.html =====
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}
+CAP - Início
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+===== ARQUIVO: ./mysite/apps/core/templates/core/menu_lateral.html =====
+{% load static %}
+
+<div id="menu-lateral">
+
+<!------------------------------ Topo ------------------------------>
+<div id="topo" class="container-menu-lateral">
+    <div id="perfil">
+        <p>G</p>
+    </div>
+    <div class="container-de-icone">
+        <img src="{% static 'core/icones/menu.svg' %}" alt="" class="icone-de-menu">
+    </div>
+</div>
+
+<!------------------------------ Calendários ------------------------------>
+<hr>
+
+<nav class="container-menu-lateral">
+<ul>
+    <li class="item-de-menu">
+        <div class="container-de-icone">
+            <img class='icone-criar-calendario' src="{% static 'core/icones/adicionar.svg' %}" alt="">
+        </div>
+        <a href="#" id="open-create-calendar">Criar calendário</a>
+    </li>
+
+    <li class="item-de-menu paleta-de-cores-8">
+        <button></button>
+        <a href="#">Calendário de Giordanni</a>
+        <div class="opcoes">
+            <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+            <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+        </div>
+    </li>
+
+    <li class="item-de-menu paleta-de-cores-1">
+        <button></button>
+        <a href="#">Atividade física</a>
+        <div class="opcoes">
+            <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+            <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+        </div>
+    </li>
+
+    <li class="item-de-menu paleta-de-cores-2 ocultar-eventos">
+        <button></button>
+        <a href="#">Hobbies</a>
+        <div class="opcoes">
+            <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+            <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+        </div>
+    </li>
+        
+    <li class="item-de-menu paleta-de-cores-6 ocultar-eventos">
+        <button></button>
+        <a href="#">Compromissos semanais</a>
+        <div class="opcoes">
+            <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+            <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+        </div>
+    </li>
+        
+    <li class="item-de-menu paleta-de-cores-5">
+        <button></button>
+        <a href="#">Estudo</a>
+        <div class="opcoes">
+            <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+            <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+        </div>
+    </li>
+
+</ul>
+</nav>
+
+<!------------------------------ Turmas ------------------------------>
+<hr>
+
+<nav class="container-menu-lateral">
+<ul>
+    <li class="item-de-menu">
+        <div class="container-de-icone">
+            <img class='icone-criar-turma' src="{% static 'core/icones/adicionar.svg' %}" alt="">
+        </div>
+        <a href="#">Criar turma</a>
+    </li>
+
+    <li class="item-de-menu">
+        <div class="container-de-icone">
+            <img class='icone-entrar-em-turma' src="{% static 'core/icones/entrar.svg' %}" alt="">
+        </div>
+        <a href="#">Entrar em turma</a>
+    </li>
+
+    <li class="turma paleta-de-cores-3">
+        <div class="item-de-menu">
+            <button></button>
+            <a href="#">Infoweb</a>
+            <div class="opcoes">
+                <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+            </div>
+        </div>
+
+        <ul class="calendarios-de-turma">
+            <li class="item-de-menu">
+                <button></button>
+                <a href="#">Programação de aplicação web</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu ocultar-eventos">
+                <button></button>
+                <a href="#">Português</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu">
+                <button></button>
+                <a href="#">Projeto Integrador</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu ocultar-eventos">
+                <button></button>
+                <a href="#">Inglês</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu ocultar-eventos">
+                <button></button>
+                <a href="#">Filosofia</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu">
+                <button></button>
+                <a href="#">Matemática</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu">
+                <button></button>
+                <a href="#">História</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu">
+                <button></button>
+                <a href="#">Empreendedorismo</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+            
+            <li class="item-de-menu">
+                <button></button>
+                <a href="#">Instalação e configuração de servidores</a>
+                <div class="opcoes">
+                    <img src="{% static 'core/icones/adicionar.svg' %}" alt="Adicionar evento" class="adicionar-evento">
+                    <img src="{% static 'core/icones/mais_opcoes.svg' %}" alt="Mais opções" class="mais-opcoes">
+                </div>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+</nav>
+
+</div>
+
+===== ARQUIVO: ./mysite/apps/core/tests.py =====
+from django.test import TestCase
+
+# Create your tests here.
+
+
+===== ARQUIVO: ./mysite/apps/core/urls.py =====
+from django.urls import path, include
+from .views import inicio
+
+urlpatterns = [
+    path('', inicio, name='CAP - Início'),
+]
+
+
+
+===== ARQUIVO: ./mysite/apps/core/views.py =====
+from django.shortcuts import render
+
+
+def inicio(request):
+    context = {}
+
+    return render(request, "core/inicio.html", context)
+
+===== ARQUIVO: ./mysite/apps/eventos/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/eventos/admin.py =====
+from django.contrib import admin
+
+# Register your models here.
+
+
+===== ARQUIVO: ./mysite/apps/eventos/apps.py =====
+from django.apps import AppConfig
+
+
+class EventosConfig(AppConfig):
+    name = "apps.eventos"
+
+
+===== ARQUIVO: ./mysite/apps/eventos/migrations/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/eventos/models/__init__.py =====
+from .evento import Evento
+
+===== ARQUIVO: ./mysite/apps/eventos/models/evento.py =====
+from django.db import models
+
+
+class Evento(models.Model):
+    ...
+
+===== ARQUIVO: ./mysite/apps/eventos/static/eventos/css/criar_calendario.css =====
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #f4f6f8;
+}
+
+.pagina {
+    justify-content: center;
+    padding: 40px 16px;
+}
+
+.card_calendario {
+    width: 100%;
+    max-width: 500px;
+    padding: 28px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card_calendario h1 {
+    margin: 0 0 8px;
+    color: #222222;
+    font-size: 1.5rem;
+}
+
+.subtitulo {
+    margin: 0 0 24px;
+    color: #666666;
+    font-size: 0.95rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    margin-bottom: 7px;
+    color: #333333;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #c9c9c9;
+    border-radius: 6px;
+    outline: none;
+    font-size: 0.95rem;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #2563eb;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.mensagem_erro {
+    min-height: 18px;
+    margin-top: 5px;
+    color: #c62828;
+    font-size: 0.8rem;
+}
+
+.mensagem_sucesso {
+    display: none;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    background: #dff5e5;
+    color: #1b6b35;
+    font-size: 0.9rem;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.botoes button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn_cancelar {
+    background: #e5e7eb;
+    color: #333333;
+}
+
+.btn_criar {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn_criar:hover,
+.btn_cancelar:hover {
+    opacity: 0.9;
+}
+
+.campo_invalido {
+    border-color: #c62828 !important;
+}
+
+===== ARQUIVO: ./mysite/apps/eventos/static/eventos/css/style.css =====
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.btn-open {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn-open:hover {
+    background-color: #1d4ed8;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    margin: 8% auto;
+    padding: 25px;
+    border-radius: 5px;
+    position: relative;
+}
+.modal .close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4b5563;
+}
+.btn-delete {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    flex: 1;
+}
+
+.btn-delete:hover {
+    background-color: #b91c1c;
+}
+.btn-delete-icon {
+    position: relative;
+    background: transparent;
+    border: none;
+    padding: 6px;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-delete-icon img {
+    width: 18px;
+    height: 18px;
+}
+.btn-delete-icon:hover {
+    opacity: 0.9;
+}
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.horarios {
+    display: flex;
+    gap: 15px;
+}
+.horarios div {
+    flex: 1;
+}
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.btn-cancel,.btn-save {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.btn-cancel {
+    background-color: #e5e7eb;
+}
+.btn-save {
+    background-color: #288012;
+    color: white;
+}
+
+
+===== ARQUIVO: ./mysite/apps/eventos/static/eventos/css/vizualizar_evento.css =====
+.modal {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+    background: #fff;
+    width: 380px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.info strong {
+    display: block;
+    color: #555;
+    margin-bottom: 3px;
+}
+
+.info p, .info span {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+===== ARQUIVO: ./mysite/apps/eventos/static/eventos/js/criar_calendario.js =====
+const form_criar_calendario = document.getElementById("form_criar_calendario");
+const nome_calendario = document.getElementById("nome_calendario");
+const descricao_calendario = document.getElementById("descricao_calendario");
+const erro_nome = document.getElementById("erro_nome");
+const erro_descricao = document.getElementById("erro_descricao");
+const mensagem_sucesso = document.getElementById("mensagem_sucesso");
+
+form_criar_calendario.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    limpar_erros();
+
+    const nome = nome_calendario.value.trim();
+    const descricao = descricao_calendario.value.trim();
+    let formulario_valido = true;
+
+    if (nome.length < 3) {
+        erro_nome.textContent = "Informe um nome com pelo menos 3 caracteres.";
+        nome_calendario.classList.add("campo_invalido");
+        formulario_valido = false;
+    }
+
+    if (descricao.length < 5) {
+        erro_descricao.textContent = "Informe uma descrição com pelo menos 5 caracteres.";
+        descricao_calendario.classList.add("campo_invalido");
+        formulario_valido = false;
+    }
+
+    if (!formulario_valido) {
+        return;
+    }
+
+    mensagem_sucesso.textContent = "Calendário criado com sucesso!";
+    mensagem_sucesso.style.display = "block";
+
+    form_criar_calendario.reset();
+
+});
+
+function limpar_erros() {
+    erro_nome.textContent = "";
+    erro_descricao.textContent = "";
+
+    nome_calendario.classList.remove("campo_invalido");
+    descricao_calendario.classList.remove("campo_invalido");
+
+    mensagem_sucesso.style.display = "none";
+}
+
+function cancelar_criacao() {
+    window.history.back();
+}
+
+===== ARQUIVO: ./mysite/apps/eventos/static/eventos/js/evento.js =====
+const createModal = document.getElementById('eventModal');
+const editModal = document.getElementById('editEventModal');
+const closeButtons = document.querySelectorAll('.modal .close');
+const cancelButtons = document.querySelectorAll('.btn-cancel');
+const addEventButtons = document.querySelectorAll('.adicionar-evento');
+const editEventButtons = document.querySelectorAll('.editar-evento');
+const deleteButton = document.getElementById('edit-delete');
+
+function showModal(modal) {
+    if (modal) {
+        modal.style.display = 'block';
+    }
+}
+
+function hideModal(modal) {
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+function closeAllModals() {
+    hideModal(createModal);
+    hideModal(editModal);
+}
+function openCreateModal() {
+    if (!createModal) return;
+    const form = createModal.querySelector('form');
+    if (form) {
+        form.reset();
+    }
+    showModal(createModal);
+}
+
+function openEditModal(eventData = {}) {
+    if (!editModal) return;
+    editModal.querySelector('#edit-event-id').value = eventData.id || '';
+    editModal.querySelector('#edit-title').value = eventData.title || '';
+    editModal.querySelector('#edit-date').value = eventData.date || '';
+    editModal.querySelector('#edit-start-time').value = eventData.start_time || '';
+    editModal.querySelector('#edit-end-time').value = eventData.end_time || '';
+    editModal.querySelector('#edit-description').value = eventData.description || '';
+
+    showModal(editModal);
+}
+
+if (addEventButtons.length) {
+    addEventButtons.forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            openCreateModal();
+        });
+    });
+}
+
+if (editEventButtons.length) {
+    editEventButtons.forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            const target = event.currentTarget;
+            openEditModal({
+                id: target.dataset.eventId,
+                title: target.dataset.title,
+                date: target.dataset.date,
+                start_time: target.dataset.startTime,
+                end_time: target.dataset.endTime,
+                description: target.dataset.description,
+            });
+        });
+    });
+}
+closeButtons.forEach(button => button.addEventListener('click', closeAllModals));
+cancelButtons.forEach(button => button.addEventListener('click', closeAllModals));
+
+if (deleteButton) {
+    deleteButton.addEventListener('click', () => {
+        if (confirm('Deseja excluir este evento?')) {
+            closeAllModals();
+        }
+    });
+}
+window.addEventListener('click', event => {
+    if (event.target === createModal || event.target === editModal) {
+        closeAllModals();
+    }
+});
+
+
+===== ARQUIVO: ./mysite/apps/eventos/static/eventos/js/vizualizar_evento.js =====
+function abrirModal() {
+    document.getElementById("modalEvento").style.display = "flex";
+}
+
+
+function fecharModal() {
+    document.getElementById("modalEvento").style.display = "none";
+}
+
+const createModal = document.getElementById('eventModal');
+const editModal = document.getElementById('editEventModal');
+const closeButtons = document.querySelectorAll('.modal .close');
+const cancelButtons = document.querySelectorAll('.btn-cancel');
+const addEventButtons = document.querySelectorAll('.adicionar-evento');
+const editEventButtons = document.querySelectorAll('.editar-evento');
+const deleteButton = document.getElementById('edit-delete');
+
+function showModal(modal) {
+    if (modal) {
+        modal.style.display = 'block';
+    }
+}
+
+function hideModal(modal) {
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+function closeAllModals() {
+    hideModal(createModal);
+    hideModal(editModal);
+}
+function openCreateModal() {
+    if (!createModal) return;
+    const form = createModal.querySelector('form');
+    if (form) {
+        form.reset();
+    }
+    showModal(createModal);
+}
+
+function openEditModal(eventData = {}) {
+    if (!editModal) return;
+    editModal.querySelector('#edit-event-id').value = eventData.id || '';
+    editModal.querySelector('#edit-title').value = eventData.title || '';
+    editModal.querySelector('#edit-date').value = eventData.date || '';
+    editModal.querySelector('#edit-start-time').value = eventData.start_time || '';
+    editModal.querySelector('#edit-end-time').value = eventData.end_time || '';
+    editModal.querySelector('#edit-description').value = eventData.description || '';
+
+    showModal(editModal);
+}
+
+if (addEventButtons.length) {
+    addEventButtons.forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            openCreateModal();
+        });
+    });
+}
+
+if (editEventButtons.length) {
+    editEventButtons.forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            const target = event.currentTarget;
+            openEditModal({
+                id: target.dataset.eventId,
+                title: target.dataset.title,
+                date: target.dataset.date,
+                start_time: target.dataset.startTime,
+                end_time: target.dataset.endTime,
+                description: target.dataset.description,
+            });
+        });
+    });
+}
+closeButtons.forEach(button => button.addEventListener('click', closeAllModals));
+cancelButtons.forEach(button => button.addEventListener('click', closeAllModals));
+
+if (deleteButton) {
+    deleteButton.addEventListener('click', () => {
+        if (confirm('Deseja excluir este evento?')) {
+            closeAllModals();
+        }
+    });
+}
+window.addEventListener('click', event => {
+    if (event.target === createModal || event.target === editModal) {
+        closeAllModals();
+    }
+});
+
+
+===== ARQUIVO: ./mysite/apps/eventos/templates/eventos/modal_criar_calendario.html =====
+{% load static %}
+<div id="criarcalendarioModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" aria-label="Fechar">&times;</span>
+        <section class="card_calendario">
+            <h1>Criar Calendário</h1>
+            <p class="subtitulo">Preencha as informações para criar um calendário.</p>
+
+            <form id="form_criar_calendario" method="post" action="">
+                <div class="campo">
+                    <label for="nome_calendario">Nome do calendário</label>
+                    <input
+                        type="text"
+                        id="nome_calendario"
+                        name="nome_calendario"
+                        placeholder="Ex.: Eventos Acadêmicos"
+                        maxlength="100"
+                        required
+                    >
+                    <small id="erro_nome" class="mensagem_erro"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao_calendario">Descrição</label>
+                    <textarea
+                        id="descricao_calendario"
+                        name="descricao_calendario"
+                        rows="5"
+                        placeholder="Coloque a descrição do calendário"
+                        maxlength="500"
+                        required
+                    ></textarea>
+                    <small id="erro_descricao" class="mensagem_erro"></small>
+                </div>
+
+                <div id="mensagem_sucesso" class="mensagem_sucesso"></div>
+
+                <div class="botoes">
+                    <button type="button" class="btn_cancelar" onclick="cancelar_criacao()">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn_criar">
+                        Criar calendário
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+ 
+
+
+===== ARQUIVO: ./mysite/apps/eventos/templates/eventos/modal_criar_evento.html =====
+{% load static %}
+
+<div id="eventModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Criar Evento</h2>
+        <form method="post" action="">
+    <label for="titulo">Título</label>
+    <input type="text" id="titulo" name="titulo" placeholder="Digite o título do evento" required>
+
+    <label for="calendario">Calendário</label>
+    <select id="calendario" name="calendario" required>
+        {% for calendario in calendarios %}
+            <option value="{{ calendario.id }}">{{ calendario.nome }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="data">Data</label>
+    <input type="date" id="data" name="data" required>
+
+    <div class="horarios">
+        <div>
+            <label for="inicio">Início</label>
+            <input type="time" id="inicio" name="inicio" required>
+        </div>
+        <div>
+            <label for="fim">Fim</label>
+            <input type="time" id="fim" name="fim" required>
+        </div>
+    </div>
+
+<label for="descricao">Descrição</label>
+<textarea id="descricao" name="descricao" placeholder="Digite a descrição do evento (opcional)"></textarea>
+            <div class="botoes">
+                <button type="button" id="cancelBtn" class="btn-cancel">Cancelar</button>
+                <button type="submit" class="btn-save">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+===== ARQUIVO: ./mysite/apps/eventos/templates/eventos/modal_criar_turma.html =====
+{% load static %}
+
+<div id="criarTurmaModal" class="modal" style="display: none;" aria-hidden="true">
+    <div class="modal-content">
+        <button type="button" class="close" data-close-modal="criarTurmaModal" aria-label="Fechar">&times;</button>
+        <section class="card_calendario">
+            <h1>Criar Turma</h1>
+            <p class="subtitulo">Preencha as informações para criar uma turma.</p>
+
+            <form id="form_criar_turma" method="post" action="">
+                <div class="campo">
+                    <label for="nome_turma">Nome da turma</label>
+                    <input
+                        type="text"
+                        id="nome_turma"
+                        name="nome_turma"
+                        placeholder="Ex.: Informática 2026"
+                        maxlength="100"
+                        required
+                    >
+                    <small id="erro_nome_turma" class="mensagem_erro"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao_turma">Descrição</label>
+                    <textarea
+                        id="descricao_turma"
+                        name="descricao_turma"
+                        rows="5"
+                        placeholder="Coloque a descrição da turma"
+                        maxlength="500"
+                        required
+                    ></textarea>
+                    <small id="erro_descricao_turma" class="mensagem_erro"></small>
+                </div>
+
+                <div id="mensagem_sucesso_turma" class="mensagem_sucesso"></div>
+
+                <div class="botoes">
+                    <button type="button" class="btn_cancelar" onclick="cancelar_criacao_turma()">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn_criar">
+                        Criar turma
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+
+===== ARQUIVO: ./mysite/apps/eventos/templates/eventos/modal_editar_evento.html =====
+{% load static %}
+
+<div id="editEventModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Editar Evento</h2>
+        <form method="post" action="">
+            <div class="modal-body">
+                <input type="hidden" id="edit-event-id" name="event_id">
+                <label for="edit-title">Título</label>
+                <input type="text" id="edit-title" name="title" placeholder="Digite o título do evento">
+                <label for="calendario">Calendário</label>
+                <select id="calendario" name="calendario">
+                    {% for calendario in calendarios %}
+                        <option value="{{ calendario.id }}" {% if calendario.id == evento.calendario.id %}selected{% endif %}>{{ calendario.nome }}</option>
+                    {% endfor %}
+                </select>
+                <label for="edit-date">Data</label>
+                <input type="date" id="edit-date" name="date">
+
+                <div class="horarios">
+                    <div>
+                        <label for="edit-start-time">Início</label>
+                        <input type="time" id="edit-start-time" name="start_time">
+                    </div>
+                    <div>
+                        <label for="edit-end-time">Fim</label>
+                        <input type="time" id="edit-end-time" name="end_time">
+                    </div>
+                </div>
+
+                <label for="edit-description">Descrição</label>
+                <textarea id="edit-description" name="description" rows="4" placeholder="Descreva o evento"></textarea>
+            </div>
+
+            <div class="botoes">
+                <button type="button" id="edit-delete" class="btn-delete-icon" title="Excluir evento" aria-label="Excluir evento">
+                    <img src="{% static 'eventos/img/delete-icon.svg' %}" alt="Excluir evento">
+                </button>
+                <button type="button" id="edit-cancel" class="btn-cancel">Cancelar</button>
+                <button type="submit" id="edit-save" class="btn-save">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+===== ARQUIVO: ./mysite/apps/eventos/templates/eventos/modal_vizualizar_evento.html =====
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar evento</title>
+        <link rel="stylesheet" href="{% static 'eventos/css/vizualizar_evento.css' %}">
+</head>
+<body>
+
+<div id="modalEvento" class="modal">
+    <div class="modal-content">
+
+        <h3 id="tituloEvento">Titulo</h3>
+
+        <div class="info">
+            <strong>Descrição:</strong>
+            <span id="descricaoEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Data:</strong>
+            <span id="dataEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Horário:</strong>
+            <span id="horarioEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Local:</strong>
+            <span id="localEvento"></span>
+        </div>
+
+        <div class="info">
+            <strong>Organizador:</strong>
+            <span id="organizadorEvento"></span>
+        </div>
+
+
+        <div class="info">
+            <strong>Status:</strong>
+            <span id="statusEvento" class="status"></span>
+        </div>
+
+        <button onclick="fecharModal()"></button>
+    </div>
+</div>
+
+
+<script src="{% static 'eventos/js/vizualizar_evento.js' %}"></script>
+
+</body>
+</html>
+
+===== ARQUIVO: ./mysite/apps/eventos/templates/eventos/teste_modal.html =====
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Modais</title>
+    <link rel="stylesheet" href="{% static 'eventos/css/style.css' %}">
+</head>
+<body>
+    <div style="padding: 30px; font-family: Arial, sans-serif;">
+        <h1>Teste de Modais de Evento</h1>
+        <p>Esta é uma página simples para validar os modais de criação e edição.</p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px;">
+            <button id="openCreateTest" class="btn-open">Abrir modal de criação</button>
+            <button id="openEditTest" class="btn-open">Abrir modal de edição</button>
+        </div>
+    </div>
+
+    {% include "eventos/modal_criar_evento.html" %}
+    {% include "eventos/modal_editar_evento.html" %}
+
+    <script src="{% static 'eventos/js/evento.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const openCreateTest = document.getElementById('openCreateTest');
+            const openEditTest = document.getElementById('openEditTest');
+
+            if (openCreateTest) {
+                openCreateTest.addEventListener('click', function() {
+                    if (typeof openCreateModal === 'function') {
+                        openCreateModal();
+                    }
+                });
+            }
+
+            if (openEditTest) {
+                openEditTest.addEventListener('click', function() {
+                    if (typeof openEditModal === 'function') {
+                        openEditModal({
+                            id: '123',
+                            title: 'Evento de teste',
+                            date: '2026-06-24',
+                            start_time: '10:00',
+                            end_time: '11:00',
+                            description: 'Descrição de teste para edição de evento.',
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+===== ARQUIVO: ./mysite/apps/eventos/tests.py =====
+from django.test import TestCase
+
+# Create your tests here.
+
+
+===== ARQUIVO: ./mysite/apps/eventos/urls.py =====
+from django.urls import path
+from .views import teste_modal
+
+urlpatterns = [
+    path('teste-modal/', teste_modal, name='teste_modal'),
+]
+
+
+===== ARQUIVO: ./mysite/apps/eventos/views.py =====
+from django.shortcuts import render
+
+def teste_modal(request):
+    return render(request, 'eventos/teste_modal.html', {})
+
+
+===== ARQUIVO: ./mysite/apps/turmas/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/turmas/admin.py =====
+from django.contrib import admin
+
+# Register your models here.
+
+
+===== ARQUIVO: ./mysite/apps/turmas/apps.py =====
+from django.apps import AppConfig
+
+
+class TurmasConfig(AppConfig):
+    name = "apps.turmas"
+
+
+===== ARQUIVO: ./mysite/apps/turmas/migrations/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/turmas/models/__init__.py =====
+from .membro_de_turma import MembroDeTurma
+from .turma import Turma
+
+===== ARQUIVO: ./mysite/apps/turmas/models/membro_de_turma.py =====
+from django.db import models
+
+
+class MembroDeTurma(models.Model):
+    ...
+
+===== ARQUIVO: ./mysite/apps/turmas/models/turma.py =====
+from django.db import models
+
+
+class Turma(models.Model):
+    ...
+
+===== ARQUIVO: ./mysite/apps/turmas/templates/entrar_em_turma.html =====
+
+
+===== ARQUIVO: ./mysite/apps/turmas/templates/listar_calendarios_de_turma.html =====
+
+
+===== ARQUIVO: ./mysite/apps/turmas/templates/listar_participantes_de_turma.html =====
+
+
+===== ARQUIVO: ./mysite/apps/turmas/templates/turma.html =====
+
+
+===== ARQUIVO: ./mysite/apps/turmas/tests.py =====
+from django.test import TestCase
+
+# Create your tests here.
+
+
+===== ARQUIVO: ./mysite/apps/turmas/views.py =====
+from django.shortcuts import render
+
+# Create your views here.
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/admin.py =====
+from django.contrib import admin
+
+# Register your models here.
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/apps.py =====
+from django.apps import AppConfig
+
+
+class UsuariosConfig(AppConfig):
+    name = "apps.usuarios"
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/migrations/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/models/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/models/usuario.py =====
+from .usuario import Usuario
+
+===== ARQUIVO: ./mysite/apps/usuarios/templates/meu_perfil.html =====
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/tests.py =====
+from django.test import TestCase
+
+# Create your tests here.
+
+
+===== ARQUIVO: ./mysite/apps/usuarios/views.py =====
+from django.shortcuts import render
+
+# Create your views here.
+
+
+===== ARQUIVO: ./mysite/config/__init__.py =====
+
+
+===== ARQUIVO: ./mysite/config/asgi.py =====
+"""
+ASGI config for config project.
+
+It exposes the ASGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/6.0/howto/deployment/asgi/
+"""
+
+import os
+
+from django.core.asgi import get_asgi_application
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+
+application = get_asgi_application()
+
+
+===== ARQUIVO: ./mysite/config/settings/base.py =====
+"""
+Django settings for config project.
+
+Generated by 'django-admin startproject' using Django 6.0.6.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/6.0/topics/settings/
+
+For the full list of settings and their values, see
+https://docs.djangoproject.com/en/6.0/ref/settings/
+"""
+
+from pathlib import Path
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+STATIC_ROOT = BASE_DIR / 'static'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+STATIC_URL = '/static/' 
+MEDIA_URL = '/media/'
+
+
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = "django-insecure-z@d8v7yp7_@1^es$o-cj$acy2eu+wu)1(u#8g0x$e!9nnmiuks"
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
+
+
+# Application definition
+
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    'apps.calendarios',
+    'apps.core',
+    'apps.eventos',
+    'apps.turmas',
+    'apps.usuarios'
+]
+
+MIDDLEWARE = [
+    "django.middleware.security.SecurityMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+ROOT_URLCONF = "config.urls"
+
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ],
+        },
+    },
+]
+
+WSGI_APPLICATION = "config.wsgi.application"
+
+
+# Database
+# https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+
+
+# Password validation
+# https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
+
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",
+    },
+    {
+        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
+    },
+]
+
+
+# Internationalization
+# https://docs.djangoproject.com/en/6.0/topics/i18n/
+
+LANGUAGE_CODE = "pt-br"
+
+TIME_ZONE = "America/Sao_Paulo"
+
+USE_I18N = True
+
+USE_TZ = True
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/6.0/howto/static-files/
+
+
+===== ARQUIVO: ./mysite/config/settings/development.py =====
+from .base import *
+
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db_development.sqlite3",
+    }
+}
+
+===== ARQUIVO: ./mysite/config/settings/production.py =====
+from .base import *
+
+DEBUG = False
+ALLOWED_HOSTS = []
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db_production.sqlite3",
+    }
+}
+
+===== ARQUIVO: ./mysite/config/settings/testing.py =====
+from .base import *
+
+DEBUG = True
+ALLOWED_HOSTS = ['*']
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db_testing.sqlite3",
+    }
+}
+
+===== ARQUIVO: ./mysite/config/urls.py =====
+"""
+URL configuration for config project.
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/6.0/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('', include('apps.core.urls')),
+    path('eventos/', include('apps.eventos.urls')),
+    path("admin/", admin.site.urls),
+]
+
+
+===== ARQUIVO: ./mysite/config/wsgi.py =====
+"""
+WSGI config for config project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/6.0/howto/deployment/wsgi/
+"""
+
+import os
+
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
+
+application = get_wsgi_application()
+
+
+===== ARQUIVO: ./mysite/manage.py =====
+#!/usr/bin/env python
+"""Django's command-line utility for administrative tasks."""
+
+import os
+import sys
+
+
+def main():
+    sys.dont_write_bytecode = True
+
+    """Run administrative tasks."""
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.development")
+    try:
+        from django.core.management import execute_from_command_line
+    except ImportError as exc:
+        raise ImportError(
+            "Couldn't import Django. Are you sure it's installed and "
+            "available on your PYTHONPATH environment variable? Did you "
+            "forget to activate a virtual environment?"
+        ) from exc
+    execute_from_command_line(sys.argv)
+
+
+if __name__ == "__main__":
+    main()
+
+
+===== ARQUIVO: ./projeto_codigo_completo.txt =====
+
+
+===== ARQUIVO: ./requirements.txt =====
+��a s g i r e f = = 3 . 1 1 . 1  
+ D j a n g o = = 6 . 0 . 6  
+ p i l l o w = = 1 2 . 2 . 0  
+ s q l p a r s e = = 0 . 5 . 5  
+ t z d a t a = = 2 0 2 6 . 2  
+ 

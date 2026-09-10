@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10px;
+
+    & .topo {
+        height: 25px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    & .voltar-para-hoje {
+        margin-left: auto;
+        border-width: 0px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: var(--cor-de-fundo-3);
+    }
+    & .icone-semana-anterior,
+    & .icone-proxima-semana {
+        font-size: 22px;
+    }
+}

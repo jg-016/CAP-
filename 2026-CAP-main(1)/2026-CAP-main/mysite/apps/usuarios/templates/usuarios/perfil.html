@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Perfil{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'usuarios/css/perfil.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Perfil de {{ request.user.primeiro_nome }}!</h1>
+
+    <br>
+    <p>apps > usuarios > templates > usuarios </p>
+    
+    <br>
+    <p>apps > usuarios > static > css > perfil.css </p>
+{% endblock %}

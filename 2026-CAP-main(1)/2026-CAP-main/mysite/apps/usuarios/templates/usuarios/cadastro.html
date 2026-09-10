@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'usuarios/css/login.css' %}">
+    <title>CAP | Cadastro</title>
+</head>
+
+<body>
+    <!-- <div class="card-autentitacao card-cadastro"> -->
+        
+    <main class="pagina">
+
+        <section class="painel-log">
+            <article class="card">
+                <header class="cabecalho">
+                    <h1><img src="{% static 'core/logos/logo_principal.svg' %}" alt="CAP"></h1>
+                    <h1>Novo por aqui?</h1>
+                    <p>Cadastre sua conta!</p>
+                </header>
+
+                <form method="post">
+                    {% csrf_token %}
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="{{ request.POST.email|default:'' }}">
+
+                    <label for="nome_completo">Nome completo</label>
+                    <input type="text" name="nome_completo" value="{{ request.POST.nome_completo|default:'' }}">
+
+                    <label for="password1">Senha</label>
+                    <input type="password" id="password1" name="password1">
+
+                    <label for="password2">Confirme sua senha</label>
+                    <section class="campo-senha">
+                        <input type="password" id="password2" name="password2" required>
+                    </section>
+
+                    {% if erro %}
+                        <p class="erro" role="alert">{{ erro }}</p>
+                    {% endif %}
+
+                    <input type="submit" id="input-cadastrar" value="Cadastrar">
+                </form>
+ 
+                <footer class="rodape-form">
+                    <p>Já tem uma conta? <a href="{% url 'login' %}">Faça login!</a></p>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <!-- </div> -->
+</body>
+
+</html>

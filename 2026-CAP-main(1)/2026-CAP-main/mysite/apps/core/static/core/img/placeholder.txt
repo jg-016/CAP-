@@ -1,0 +1,1 @@
+Assim que adicionar o primeiro arquivo a este diretório, pode apagar 'placeholder.txt' dele

@@ -1,0 +1,52 @@
+{% load static %}
+<div id="criarcalendarioModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" aria-label="Fechar">&times;</span>
+        <section class="card_calendario">
+            <h1>Criar Calendário</h1>
+            <p class="subtitulo">Preencha as informações para criar um calendário.</p>
+
+            <form id="form_criar_calendario" method="post" action="">
+                <div class="campo">
+                    <label for="nome_calendario">Nome do calendário</label>
+                    <input
+                        type="text"
+                        id="nome_calendario"
+                        name="nome_calendario"
+                        placeholder="Ex.: Eventos Acadêmicos"
+                        maxlength="100"
+                        required
+                    >
+                    <small id="erro_nome" class="mensagem_erro"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao_calendario">Descrição</label>
+                    <textarea
+                        id="descricao_calendario"
+                        name="descricao_calendario"
+                        rows="5"
+                        placeholder="Coloque a descrição do calendário"
+                        maxlength="500"
+                        required
+                    ></textarea>
+                    <small id="erro_descricao" class="mensagem_erro"></small>
+                </div>
+
+                <div id="mensagem_sucesso" class="mensagem_sucesso"></div>
+
+                <div class="botoes">
+                    <button type="button" class="btn_cancelar" onclick="cancelar_criacao()">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" class="btn_criar">
+                        Criar calendário
+                    </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+ 

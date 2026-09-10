@@ -1,0 +1,129 @@
+.scroll-container {
+    overflow: scroll;
+    width: 100%;
+    flex: 1;
+}
+.calendario-geral {
+    --width-coluna-1: 40px;
+    --height-fileira-1: 10px;
+    --height-horario: 15px;
+
+    font-size: 12px;
+
+    display: grid;
+    grid-template-columns: var(--width-coluna-1) max(1200px, calc(100% - var(--width-coluna-1)));
+    grid-template-rows: var(--height-fileira-1) max(2000px, calc(100% - var(--height-fileira-1)));
+    grid-template-areas: 
+    '.        datas'
+    'horarios grade';
+
+    .datas {grid-area: datas}
+    .horarios {grid-area: horarios}
+    .grade-eventos {grid-area: grade}
+
+    .datas {
+        display: flex;
+        align-items: center;
+
+        * {
+            flex: 1;
+            text-align: center;
+        }
+    }
+    .horarios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        * {
+            height: var(--height-horario);
+        }
+    }
+    .grade-eventos {
+        position: relative
+    }
+    .colunas-datas {
+        display: flex;
+        position: absolute;
+        inset: 0;
+
+        * {
+            flex: 1;
+            padding: calc(var(--height-horario) / 2) 0;
+            border-left: 1px solid #C0C0C0;
+        }
+    }
+    .linhas-horizontais {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .container-linha-horizontal {
+            height: var(--height-horario);
+            display: flex;
+            align-items: center;
+        }
+        .linha-horizontal {
+            width: 100%;
+            height: 1px;
+            border-top: 1px solid #C0C0C0
+        }
+    }
+    .eventos-calendario {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        pointer-events: none;
+    }
+    .evento-calendario {
+        padding: 1.5px 0;
+        position: absolute;
+        color: white;
+        pointer-events: auto;
+        top: 0;
+        left: 0;
+        height: 0;
+        color: inherit;
+        text-decoration: none;
+    }
+    .conteudo-evento {
+        height: 100%;
+        width: 100%;
+        padding: 6px 8px;
+        background-color: var(--cor-clara);
+        border-radius: 6px;
+        overflow: hidden;
+        font-size: 13px;
+    }
+    .conteudo-evento:hover {
+        background-color: var(--cor-escura);
+    }
+    .evento-titulo {
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+    .evento-horario {
+        font-size: 10px;
+    }
+    .botao-criar-evento {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 1000;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: #288012;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .botao-criar-evento:hover {
+        background-color: #20660e;
+    }
+}
